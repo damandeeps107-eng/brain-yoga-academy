@@ -231,6 +231,160 @@
         .whatsapp-pulse-btn {
             animation: pulseWa 3.2s infinite ease-in-out;
         }
+    
+        /* ========================================================================= */
+        /* SILKY SMOOTH ANIMATIONS & MICRO-INTERACTIONS                              */
+        /* ========================================================================= */
+
+        /* Hero Entrance Keyframes */
+        @keyframes heroFadeDown {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -22px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes heroFadeUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 32px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes heroCardIn {
+            from {
+                opacity: 0;
+                transform: translate3d(36px, 18px, 0) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) scale(1);
+            }
+        }
+
+        @keyframes floatSubtle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        /* Hero Staggered Animation Classes */
+        .anim-hero-eyebrow {
+            animation: heroFadeDown 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+        }
+        .anim-hero-title {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
+        }
+        .anim-hero-sub {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+        }
+        .anim-hero-cta {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.46s both;
+        }
+        .anim-hero-badges {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.60s both;
+        }
+        .anim-hero-card {
+            animation: heroCardIn 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+        }
+
+        /* Subtle Gentle Card Float */
+        .hero-float-subtle {
+            animation: floatSubtle 6s ease-in-out 1.2s infinite;
+        }
+
+        /* Scroll-Triggered Reveal Animations */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+            transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* Grid Stagger Cascades */
+        .stagger-grid > * {
+            opacity: 0;
+            transform: translate3d(0, 32px, 0);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .stagger-grid.is-revealed > *:nth-child(1) { transition-delay: 0.04s; }
+        .stagger-grid.is-revealed > *:nth-child(2) { transition-delay: 0.10s; }
+        .stagger-grid.is-revealed > *:nth-child(3) { transition-delay: 0.16s; }
+        .stagger-grid.is-revealed > *:nth-child(4) { transition-delay: 0.22s; }
+        .stagger-grid.is-revealed > *:nth-child(5) { transition-delay: 0.28s; }
+        .stagger-grid.is-revealed > *:nth-child(6) { transition-delay: 0.34s; }
+        .stagger-grid.is-revealed > *:nth-child(7) { transition-delay: 0.40s; }
+        .stagger-grid.is-revealed > *:nth-child(8) { transition-delay: 0.46s; }
+        .stagger-grid.is-revealed > *:nth-child(9) { transition-delay: 0.52s; }
+        .stagger-grid.is-revealed > *:nth-child(10) { transition-delay: 0.58s; }
+
+        .stagger-grid.is-revealed > * {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* Silky Smooth Card Transitions & Hover Dynamics */
+        .by-card {
+            transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+        }
+        .by-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 36px -4px rgba(0, 121, 132, 0.14);
+            border-color: #007984;
+        }
+
+        /* Image Micro-Zoom inside cards */
+        .by-card-zoom img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .by-card-zoom:hover img {
+            transform: scale(1.04);
+        }
+
+        /* Interactive Button Micro-Press States */
+        .by-btn-primary {
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .by-btn-primary:active {
+            transform: scale(0.97) translateY(0);
+        }
+        .by-btn-secondary {
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .by-btn-secondary:active {
+            transform: scale(0.97);
+        }
+
+        /* Safe fallback for users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal-on-scroll, .stagger-grid > * {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+
     </style>
 </head>
 <body class="selection:bg-brandOrange selection:text-white">
@@ -339,7 +493,7 @@
                 <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
                     
                     <!-- Eyebrow & Client Hook (Streamlined, punchy, no mobile clutter) -->
-                    <div class="flex flex-wrap items-center gap-2">
+                    <div class="anim-hero-eyebrow flex flex-wrap items-center gap-2">
                         <div class="inline-flex items-center gap-1.5 bg-brandTealLight px-3 py-1 rounded-full border border-brandTeal/20 text-[11px] font-bold uppercase tracking-wider text-brandTeal">
                             <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
                             <span>Mind-Wellness For Adults</span>
@@ -351,13 +505,13 @@
                     </div>
 
                     <!-- Main Headline (Crisp, bold, perfectly responsive) -->
-                    <h1 class="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brandDark tracking-tight leading-[1.25]">
+                    <h1 class="anim-hero-title font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brandDark tracking-tight leading-[1.25]">
                         Deadlines. Pressure. Responsibilities. <br class="hidden sm:inline">
                         <span style="color: #007984;">Is Your Mind Getting a Break?</span>
                     </h1>
 
                     <!-- Subheading (Exact wording from Rajendra Boddu's Document) -->
-                    <p class="text-sm sm:text-base md:text-lg text-slate-700 leading-relaxed font-normal max-w-2xl">
+                    <div class="anim-hero-sub space-y-3"><p class="text-sm sm:text-base md:text-lg text-slate-700 leading-relaxed font-normal max-w-2xl">
                         Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life.
                     </p>
 
@@ -366,8 +520,10 @@
                         <strong>Brain Yoga for Busy Minds</strong> is a practical mind-wellness program for working professionals, entrepreneurs, and adults who want to pause, reset, and respond to life's challenges with greater awareness.
                     </p>
 
+                    </div>
+
                     <!-- CTAs (Prominent on mobile, side-by-side on desktop) -->
-                    <div class="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                    <div class="anim-hero-cta pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                         <button onclick="openModal('individualModal')" class="by-btn-primary !w-full sm:!w-auto !py-3 !text-sm">
                             <i data-lucide="check-circle-2" class="w-4 h-4"></i>
                             <span>Book a FREE Introductory Session</span>
@@ -380,7 +536,7 @@
                     </div>
 
                     <!-- Trust Tags (Single-line micro strip) -->
-                    <div class="pt-1 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-semibold text-slate-600">
+                    <div class="anim-hero-badges pt-1 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-semibold text-slate-600">
                         <div class="flex items-center gap-1.5">
                             <i data-lucide="check" class="w-3.5 h-3.5 text-brandTeal"></i>
                             <span>Hands-on sessions</span>
@@ -399,7 +555,7 @@
                 <!-- Right Visual Column (5 cols) -->
                 <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, unified bottom bar! -->
                 <div class="lg:col-span-5 flex flex-col justify-center">
-                    <div class="by-card max-w-sm sm:max-w-md mx-auto w-full overflow-hidden shadow-lg border border-slate-200/80 bg-white">
+                    <div class="anim-hero-card hero-float-subtle by-card max-w-sm sm:max-w-md mx-auto w-full overflow-hidden shadow-lg border border-slate-200/80 bg-white">
                         <!-- Clean, unobstructed full portrait photo (100% visible, no half cut) -->
                         <div class="relative w-full bg-slate-100 overflow-hidden">
                             <img src="rajendra_14_new.webp" alt="Rajendra Boddu - Brain Yoga Trainer" class="w-full h-auto block object-cover" loading="eager" fetchpriority="high">
@@ -442,7 +598,7 @@
     <section id="challenges" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
                 <div class="section-eyebrow">
                     <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
                     <span>Everyday Reality Check</span>
@@ -456,7 +612,7 @@
             </div>
 
             <!-- 9 Relatable Trigger Cards in Exact #D2F0FF Ice Teal Blue from kids.html -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
                     <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                         <i data-lucide="compass" class="w-4 h-4"></i>
@@ -572,7 +728,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-10 sm:mb-14">
                 <div class="section-eyebrow">
                     <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
                     <span>A Simple Shift in Perspective</span>
@@ -587,7 +743,7 @@
             </div>
 
             <!-- Story Visual Illustration Card (Strictly NO text on top of image) -->
-            <div class="by-card mb-10 overflow-hidden">
+            <div class="reveal-on-scroll by-card mb-10 overflow-hidden">
                 <div class="aspect-[16/9] sm:aspect-[21/9] w-full bg-slate-100 overflow-hidden">
                     <img src="barking_dog_new.webp" alt="10 People and 1 Barking Dog - Mindset Metaphor" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
                 </div>
@@ -758,7 +914,7 @@
     <section id="about" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
                 <div class="section-eyebrow">
                     <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
                     <span>The Core Philosophy</span>
@@ -780,7 +936,7 @@
                     <h3 class="text-lg font-bold text-brandDark mt-2">Not Just Relaxation. A Practical Way to Train Your Mind.</h3>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stagger-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="p-6 rounded-xl bg-[#D2F0FF] border border-[#007984]/25 text-center hover:shadow-md transition-all">
                         <div class="w-12 h-12 mx-auto rounded-xl bg-[#007984] text-white flex items-center justify-center font-bold text-base mb-3 shadow-xs">01</div>
                         <h4 class="font-bold text-brandDark text-sm mb-1.5">Brain-Training Activities</h4>
@@ -808,7 +964,7 @@
             </div>
 
             <!-- 3 Mind-Body Connection Pillars -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="by-card p-6 bg-white border border-slate-200 shadow-xs hover:border-[#007984] transition-colors">
                     <div class="w-10 h-10 rounded-lg bg-[#D2F0FF] text-[#007984] flex items-center justify-center mb-4">
                         <i data-lucide="brain" class="w-5 h-5"></i>
@@ -862,7 +1018,7 @@
     <section id="practices" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-16">
                 <div class="section-eyebrow-orange">
                     <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
                     <span>Curriculum & Techniques</span>
@@ -876,10 +1032,10 @@
             </div>
 
             <!-- 8 Full Practice Cards with Clean Unobstructed Photos -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- 1. Brain Gym and Brain Coordination -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_braingym.webp" alt="Brain Gym and Brain Coordination" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -904,7 +1060,7 @@
                 </div>
 
                 <!-- 2. Ambidextrous and Neurobic Activities -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_ambidextrous.webp" alt="Ambidextrous and Neurobic Activities" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -929,7 +1085,7 @@
                 </div>
 
                 <!-- 3. Breathing and Pranayama -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_pranayama.webp" alt="Breathing and Pranayama" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -954,7 +1110,7 @@
                 </div>
 
                 <!-- 4. Mindfulness and Inner Stillness -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_mindfulness.webp" alt="Mindfulness and Inner Stillness" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -979,7 +1135,7 @@
                 </div>
 
                 <!-- 5. Meditation and Creative Visualization -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_visualization.webp" alt="Meditation and Creative Visualization" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -1004,7 +1160,7 @@
                 </div>
 
                 <!-- 6. Emotional Awareness and EFT -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_eft.webp" alt="Emotional Awareness and EFT" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -1029,7 +1185,7 @@
                 </div>
 
                 <!-- 7. Yoga Nidra and Desk Relaxation -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_yoganidra.webp" alt="Yoga Nidra and Desk Relaxation" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -1054,7 +1210,7 @@
                 </div>
 
                 <!-- 8. Everyday Awareness Techniques -->
-                <div class="by-card flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="practice_awareness.webp" alt="Everyday Awareness Techniques" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -1097,7 +1253,7 @@
     <section id="benefits" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] text-white border-b border-teal-900/40">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
                 <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-4 backdrop-blur-xs">
                     <span class="w-2 h-2 rounded-full bg-amber-300"></span>
                     <span class="text-xs font-bold uppercase tracking-widest text-white">Sustainable Benefits</span>
@@ -1111,7 +1267,7 @@
             </div>
 
             <!-- 6 Pure White Benefit Cards with Teal Checkmark Badges -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
                     <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
@@ -1190,7 +1346,7 @@
     <section id="how-it-works" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-12">
                 <div class="section-eyebrow-orange">
                     <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
                     <span>Flexible Delivery</span>
@@ -1214,7 +1370,7 @@
             </div>
 
             <!-- Corporate Session Showcase Cards - Clean Unobstructed Photos! -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <div class="by-card bg-white border border-orange-200/80 overflow-hidden shadow-sm hover:shadow-xl transition-all">
                     <div class="aspect-[16/10] w-full overflow-hidden bg-slate-100">
                         <img src="workshop_corporate_team.webp" alt="Corporate Brain Yoga Workshop" class="w-full h-full object-cover" loading="lazy" decoding="async">
@@ -1320,7 +1476,7 @@
     <section id="corporate" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] text-white border-b border-teal-900/40">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
                 <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-4 backdrop-blur-xs">
                     <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
                     <span class="text-xs font-bold uppercase tracking-widest text-white">Corporate Brain Yoga Workshops</span>
@@ -1334,7 +1490,7 @@
             </div>
 
             <!-- 4 Formats: Crisp White Cards on Signature Teal Blue Background -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 
                 <div class="by-card p-6 bg-white text-slate-800 shadow-xl border border-teal-100">
                     <div class="text-xs font-bold text-[#007984] uppercase tracking-wider mb-2">Express Break</div>
@@ -1425,7 +1581,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 
                 <!-- Trainer Photo Column (Clean framed photo) -->
-                <div class="lg:col-span-5 flex flex-col items-center">
+                <div class="reveal-on-scroll lg:col-span-5 flex flex-col items-center">
                     <div class="by-card w-full max-w-sm overflow-hidden bg-white border border-orange-200/80 shadow-md">
                         <div class="aspect-[4/4] bg-slate-100 overflow-hidden">
                             <img src="trainer_rajendra_portrait.jpg" alt="Rajendra Boddu" class="w-full h-full object-cover object-top" loading="eager" decoding="async">
@@ -1439,7 +1595,7 @@
                 </div>
 
                 <!-- Trainer Bio Column (Exact story from document) -->
-                <div class="lg:col-span-7 space-y-6">
+                <div class="reveal-on-scroll lg:col-span-7 space-y-6">
                     <div class="section-eyebrow-orange">
                         <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
                         <span>Meet Your Trainer</span>
@@ -1510,7 +1666,7 @@
     <section id="testimonials" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] text-white border-b border-teal-900/40">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
                 <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-4 backdrop-blur-xs">
                     <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
                     <span class="text-xs font-bold uppercase tracking-widest text-white">Real Experiences</span>
@@ -1524,7 +1680,7 @@
             </div>
 
             <!-- 6 Testimonial Cards: Crisp White on Signature Teal Blue #007984 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- 1. Uma Maheswari -->
                 <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
@@ -1691,7 +1847,7 @@
     <section id="faq" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
                 <div class="section-eyebrow-orange">
                     <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
                     <span>Got Questions?</span>
@@ -2233,6 +2389,39 @@
             const firstChevron = document.querySelector('.faq-chevron');
             if (firstChevron) firstChevron.classList.add('rotate-180');
         });
+
+        
+        // =========================================================================
+        // SILKY SMOOTH SCROLL REVEAL OBSERVER (Native IntersectionObserver)
+        // =========================================================================
+        (function() {
+            if ('IntersectionObserver' in window) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px 0px -40px 0px',
+                    threshold: 0.08
+                };
+
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe all elements targeted for reveal
+                document.querySelectorAll('.reveal-on-scroll, .stagger-grid').forEach(el => {
+                    revealObserver.observe(el);
+                });
+            } else {
+                // Graceful fallback for legacy browsers: reveal everything immediately
+                document.querySelectorAll('.reveal-on-scroll, .stagger-grid').forEach(el => {
+                    el.classList.add('is-revealed');
+                });
+            }
+        })();
 
         // WhatsApp Form Handlers
         function handleSessionSubmit(e) {
