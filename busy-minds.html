@@ -322,111 +322,98 @@
     <!-- SECTION 1: HERO (Top of page) — Background: Warm Peach #FFF3EB            -->
     <!-- Strictly No Header Overlap: pt-10 sm:pt-14 lg:pt-16 pb-16 lg:pb-24       -->
     <!-- ========================================================================= -->
-    <section id="hero" class="relative bg-brandPeachBg pt-10 sm:pt-14 lg:pt-16 pb-16 lg:pb-24 border-b border-slate-200">
+        <!-- ========================================================================= -->
+    <!-- SECTION 1: HERO (Top of page) — Background: Warm Peach #FFF3EB            -->
+    <!-- Mobile-Refined & Uncluttered: Balanced Spacing, No Overcrowding            -->
+    <!-- ========================================================================= -->
+    <section id="hero" class="relative bg-brandPeachBg pt-6 pb-12 sm:pt-10 sm:pb-16 lg:pt-16 lg:pb-24 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
                 
                 <!-- Left Content Column (7 cols) -->
-                <div class="lg:col-span-7 space-y-6 text-left">
+                <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
                     
-                    <!-- Eyebrow Tag -->
-                    <div class="section-eyebrow">
-                        <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
-                        <span>Practical, hands-on sessions • Mind-Wellness For Adults</span>
-                    </div>
-
-                    <!-- Client Hook Highlight Box (Prominent & Eye-Catching) -->
-                    <div>
-                        <div class="inline-flex items-center gap-2.5 bg-white px-4 py-2 rounded-xl border border-brandOrange/30 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brandOrange animate-pulse"></span>
-                            <p class="text-brandOrange font-bold text-base sm:text-lg">
-                                "Body at home. Mind still at the office."
-                            </p>
+                    <!-- Eyebrow & Client Hook (Streamlined, punchy, no mobile clutter) -->
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div class="inline-flex items-center gap-1.5 bg-brandTealLight px-3 py-1 rounded-full border border-brandTeal/20 text-[11px] font-bold uppercase tracking-wider text-brandTeal">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                            <span>Mind-Wellness For Adults</span>
+                        </div>
+                        <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-brandOrange/30 shadow-xs text-xs sm:text-sm font-bold text-brandOrangeDark">
+                            <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
+                            <span>"Body at home. Mind still at the office."</span>
                         </div>
                     </div>
 
-                    <!-- Main Headline -->
-                    <h1 class="main-heading">
+                    <!-- Main Headline (Crisp, bold, perfectly responsive) -->
+                    <h1 class="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brandDark tracking-tight leading-[1.25]">
                         Your Work Is Demanding. <br class="hidden sm:inline">
                         <span style="color: #007984;">Your Mind Needs Care Too.</span>
                     </h1>
 
-                    <!-- Subheading (Exact wording from document) -->
-                    <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-medium max-w-2xl">
+                    <!-- Subheading (Exact wording from Rajendra Boddu's Document) -->
+                    <p class="text-sm sm:text-base md:text-lg text-slate-700 leading-relaxed font-normal max-w-2xl">
                         Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life.
                     </p>
 
-                    <!-- Paragraph description -->
-                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
+                    <!-- Paragraph description (Visible on tablet/desktop, streamlined on mobile) -->
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl hidden sm:block">
                         <strong>Brain Yoga for Busy Minds</strong> is a practical mind-wellness program for working professionals, entrepreneurs, and adults who want to pause, reset, and respond to life's challenges with greater awareness.
                     </p>
 
-                    <!-- CTAs -->
-                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                        <button onclick="openModal('individualModal')" class="by-btn-primary">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                    <!-- CTAs (Prominent on mobile, side-by-side on desktop) -->
+                    <div class="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                        <button onclick="openModal('individualModal')" class="by-btn-primary !w-full sm:!w-auto !py-3 !text-sm">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i>
                             <span>Book a FREE Introductory Session</span>
                         </button>
                         
-                        <button onclick="openModal('corporateModal')" class="by-btn-secondary">
-                            <i data-lucide="building-2" class="w-5 h-5"></i>
-                            <span>Enquire About Corporate Workshops</span>
+                        <button onclick="openModal('corporateModal')" class="by-btn-secondary !w-full sm:!w-auto !py-2.5 sm:!py-3 !text-xs sm:!text-sm">
+                            <i data-lucide="building-2" class="w-4 h-4"></i>
+                            <span>Enquire Corporate Workshops</span>
                         </button>
                     </div>
 
-                    <!-- Trust Tags -->
-                    <div class="pt-2 flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-600">
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="check" class="w-4 h-4 text-brandTeal"></i>
-                            <span>Practical, hands-on sessions</span>
+                    <!-- Trust Tags (Single-line micro strip) -->
+                    <div class="pt-1 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-semibold text-slate-600">
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-brandTeal"></i>
+                            <span>Hands-on sessions</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="monitor" class="w-4 h-4 text-brandTeal"></i>
-                            <span>Online & In-Person Sessions</span>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="monitor" class="w-3.5 h-3.5 text-brandTeal"></i>
+                            <span>Online & In-Person</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="briefcase" class="w-4 h-4 text-brandOrange"></i>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="briefcase" class="w-3.5 h-3.5 text-brandOrange"></i>
                             <span>Corporate & Individual</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Visual Column (5 cols) -->
-                <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, details underneath! -->
-                <div class="lg:col-span-5 space-y-4">
+                <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, unified bottom bar! -->
+                <div class="lg:col-span-5">
                     <div class="by-card">
                         <!-- Clean, unobstructed portrait photo -->
-                        <div class="relative aspect-[4/4] bg-slate-100 overflow-hidden">
+                        <div class="relative h-60 sm:h-72 lg:h-[370px] w-full bg-slate-100 overflow-hidden">
                             <img src="rajindra_boddu_portrait.jpg" alt="Rajendra Boddu - Brain Yoga Trainer" class="w-full h-full object-cover object-top" loading="eager" fetchpriority="high">
                         </div>
 
-                        <!-- Info cleanly placed BELOW the photo -->
-                        <div class="p-5 bg-white border-t border-slate-100">
-                            <div class="flex items-start justify-between gap-3">
-                                <div>
-                                    <h3 class="text-lg font-bold text-brandDark">Rajendra Boddu</h3>
-                                    <p class="text-xs font-semibold text-brandTeal mt-0.5">Brain Yoga Trainer | Yoga Therapist</p>
-                                    <p class="text-xs text-slate-500 mt-1">15 Yrs IT Veteran (TCS & Capgemini)</p>
+                        <!-- Single Sleek Footer Bar Below Photo -->
+                        <div class="p-4 sm:p-5 bg-white border-t border-slate-100 flex items-center justify-between gap-3">
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-brandDark truncate">Rajendra Boddu</h3>
+                                    <span class="text-[9px] font-bold uppercase tracking-wider text-brandOrange bg-brandPeachLight px-2 py-0.5 rounded border border-brandOrange/20 whitespace-nowrap">Lead Trainer</span>
                                 </div>
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-brandPeachLight px-2.5 py-1 rounded-md border border-brandOrange/20 whitespace-nowrap">
-                                    Lead Facilitator
-                                </span>
+                                <p class="text-xs text-slate-500 truncate mt-0.5">15 Yrs IT Veteran & Certified Yoga Therapist</p>
                             </div>
-                        </div>
-
-                        <!-- Video Introductory Card Below Photo -->
-                        <div class="p-4 bg-brandTealLight/60 border-t border-slate-100 flex items-center justify-between gap-4">
-                            <div class="flex items-center gap-3">
-                                <button onclick="openVideoModal()" class="w-11 h-11 rounded-lg bg-brandOrange hover:bg-brandOrangeDark text-white flex items-center justify-center shadow-md transition-all flex-shrink-0" aria-label="Play video introduction">
-                                    <i data-lucide="play" class="w-5 h-5 ml-0.5 fill-current"></i>
-                                </button>
-                                <div>
-                                    <h4 class="text-xs sm:text-sm font-bold text-brandDark">Watch Quick Intro Video</h4>
-                                    <p class="text-[11px] text-slate-600">Sample preview of Brain Yoga techniques</p>
-                                </div>
-                            </div>
-                            <button onclick="openVideoModal()" class="text-[11px] font-bold text-brandTeal bg-white px-3 py-1.5 rounded-lg border border-brandTeal/20 shadow-sm hover:bg-brandTeal hover:text-white transition-all whitespace-nowrap">
-                                2 Mins Demo ▶
+                            
+                            <!-- Compact 2-Min Demo Video Button -->
+                            <button onclick="openVideoModal()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-brandTealLight hover:bg-brandTeal hover:text-white text-brandTeal text-xs font-bold border border-brandTeal/20 transition-all shadow-xs flex-shrink-0" aria-label="Watch 2-minute introductory video">
+                                <i data-lucide="play" class="w-3.5 h-3.5 fill-current text-brandOrange"></i>
+                                <span>2-Min Demo</span>
                             </button>
                         </div>
                     </div>
