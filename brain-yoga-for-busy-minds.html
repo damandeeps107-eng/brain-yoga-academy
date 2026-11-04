@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brain Yoga for Busy Minds | Corporate Wellness & Mind-Wellness</title>
-    <meta name="description" content="Discover practical Brain Yoga, mindful movement, breathing, meditation, and relaxation sessions for working professionals, adults, and corporate teams.">
+    <title>Brain Yoga for Busy Minds | Mind-Wellness for Working Professionals & Corporate Teams</title>
+    <meta name="description" content="Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life. Founded by Rajendra Boddu (15 yrs IT veteran & Yoga Therapist).">
     
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Brain Yoga for Busy Minds | Corporate Wellness & Mind-Wellness">
-    <meta property="og:description" content="Practical mind-wellness program for working professionals, entrepreneurs, and adults to pause, reset, and respond with greater awareness.">
+    <meta property="og:title" content="Brain Yoga for Busy Minds | Mind-Wellness for Working Professionals">
+    <meta property="og:description" content="Body at home. Mind still at the office. Develop calmness, focus, and emotional balance through practical Brain Yoga techniques.">
     <meta property="og:image" content="rajindra_boddu_portrait.jpg">
     <meta property="og:type" content="website">
 
-    <!-- Fonts: Poppins for Headings + Inter for Body (Exact Astra / Elementor match from kids.html) -->
+    <!-- Fonts: Poppins (Headings) + Inter (Body) — Exact Astra / Elementor match from kids.html -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -44,11 +44,21 @@
         }
     </script>
 
-    <!-- Lucide Icons -->
+    <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        /* Exact Typography Matching kids.html */
+        /* Exact Typography Matching Children Brain Yoga (kids.html) */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 105px; /* Offset sticky header when navigating anchor links */
+        }
+        @media (max-width: 768px) {
+            html {
+                scroll-padding-top: 90px;
+            }
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             font-size: 16px;
@@ -61,17 +71,17 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             color: #1F1F1F;
             letter-spacing: -0.015em;
         }
 
-        /* Clean Section Headers */
+        /* Standardized Section Eyebrows */
         .section-eyebrow {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.35rem 1rem;
+            padding: 0.4rem 1.15rem;
             border-radius: 9999px;
             font-size: 0.75rem;
             font-weight: 700;
@@ -79,30 +89,33 @@
             letter-spacing: 0.08em;
             background-color: #E6F7F8;
             color: #007984;
-            border: 1px solid rgba(0, 121, 132, 0.2);
+            border: 1px solid rgba(0, 121, 132, 0.22);
             margin-bottom: 0.85rem;
         }
 
         .section-eyebrow-orange {
             background-color: #FFE8DA;
             color: #D36005;
-            border-color: rgba(253, 135, 66, 0.25);
+            border-color: rgba(253, 135, 66, 0.28);
         }
 
+        /* Standardized Section Headings */
         .main-heading {
-            font-size: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.95rem;
             font-weight: 700;
             line-height: 1.25;
             color: #1F1F1F;
+            letter-spacing: -0.02em;
         }
         @media (min-width: 640px) {
             .main-heading {
-                font-size: 2.5rem;
+                font-size: 2.35rem;
             }
         }
         @media (min-width: 1024px) {
             .main-heading {
-                font-size: 2.85rem;
+                font-size: 2.75rem;
             }
         }
 
@@ -110,7 +123,7 @@
             font-size: 1rem;
             line-height: 1.65;
             color: #475569;
-            max-width: 42rem;
+            max-width: 44rem;
             margin-left: auto;
             margin-right: auto;
             margin-top: 0.75rem;
@@ -199,22 +212,15 @@
             border-color: #007984;
         }
 
-        /* Header blur */
-        .glass-header {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #E2E8F0;
-        }
-
         /* Modals */
         .modal-backdrop {
-            background: rgba(15, 37, 55, 0.7);
+            background: rgba(15, 37, 55, 0.72);
             backdrop-filter: blur(6px);
         }
 
-        /* WhatsApp pulse animation */
+        /* Floating WhatsApp pulse animation */
         @keyframes pulseWa {
-            0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -4px rgba(37, 211, 102, 0.4); }
+            0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -4px rgba(37, 211, 102, 0.45); }
             50% { transform: scale(1.05); box-shadow: 0 16px 35px 0px rgba(37, 211, 102, 0.65); }
         }
         .whatsapp-pulse-btn {
@@ -225,11 +231,11 @@
 <body class="selection:bg-brandOrange selection:text-white">
 
     <!-- ========================================================================= -->
-    <!-- TOP NOTIFICATION BANNER: BRAIN YOGA FOR CHILDREN LINK -->
+    <!-- TOP ANNOUNCEMENT BAR: BRAIN YOGA FOR CHILDREN LINK (Static, No Overlap)   -->
     <!-- ========================================================================= -->
-    <aside aria-label="Program Announcement" class="bg-brandPeachLight border-b border-brandOrange/20 py-2.5 px-4 text-center text-xs font-medium text-slate-800">
+    <aside aria-label="Program Announcement" class="bg-brandPeachLight border-b border-brandOrange/20 py-2 px-4 text-center text-xs font-medium text-slate-800">
         <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
-            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brandOrange text-white">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brandOrange text-white">
                 Child Wellness
             </span>
             <span>Looking for our proven memory & concentration training for kids?</span>
@@ -241,68 +247,71 @@
     </aside>
 
     <!-- ========================================================================= -->
-    <!-- TOP STICKY NAVBAR (With Official Logo) -->
+    <!-- TOP STICKY NAVBAR (Solid, Never Overlaps Content, Height: h-16 lg:h-20)   -->
     <!-- ========================================================================= -->
-    <header class="sticky top-0 z-40 w-full glass-header shadow-sm transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header class="sticky top-0 z-50 w-full bg-white/98 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between gap-4">
+            
             <!-- Official Brand Logo -->
-            <a href="busy-minds.html" class="flex items-center gap-3 group">
-                <img src="official_logo.png" alt="Brain Yoga Academy" class="h-10 sm:h-12 w-auto object-contain">
-                <span class="hidden sm:inline-block text-[11px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2.5 py-1 rounded-md border border-brandTeal/20">
+            <a href="busy-minds.html" class="flex items-center gap-2.5 group flex-shrink-0">
+                <img src="official_logo.png" alt="Brain Yoga Academy" class="h-9 sm:h-11 w-auto object-contain">
+                <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2.5 py-1 rounded-md border border-brandTeal/20">
                     For Busy Minds
                 </span>
             </a>
 
-            <!-- Desktop Navigation Links -->
-            <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-slate-700">
-                <a href="#about" class="hover:text-brandTeal transition-colors">About</a>
+            <!-- Desktop Navigation Links (Responsive, perfectly sized, no wrapping) -->
+            <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-semibold text-slate-700">
                 <a href="#challenges" class="hover:text-brandTeal transition-colors">Everyday Challenges</a>
                 <a href="#shift" class="hover:text-brandTeal transition-colors">Shift in Perspective</a>
+                <a href="#about" class="hover:text-brandTeal transition-colors">About</a>
                 <a href="#practices" class="hover:text-brandTeal transition-colors">Our Practices</a>
                 <a href="#benefits" class="hover:text-brandTeal transition-colors">Gains</a>
-                <a href="#corporate" class="hover:text-brandTeal transition-colors">Corporate Workshops</a>
-                <a href="#trainer" class="hover:text-brandTeal transition-colors">Your Trainer</a>
+                <a href="#corporate" class="hover:text-brandTeal transition-colors text-brandTeal font-bold">Corporate</a>
+                <a href="#trainer" class="hover:text-brandTeal transition-colors">Trainer</a>
                 <a href="#testimonials" class="hover:text-brandTeal transition-colors">Testimonials</a>
                 <a href="#faq" class="hover:text-brandTeal transition-colors">FAQ</a>
             </nav>
 
-            <!-- Action Buttons -->
-            <div class="flex items-center gap-3">
-                <a href="kids.html" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-brandTealLight hover:bg-brandTealIce text-brandTeal text-xs font-bold border border-brandTeal/20 transition-all">
-                    <span>Brain Yoga For Children</span>
+            <!-- Header Action CTAs -->
+            <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+                <a href="kids.html" class="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brandPeachLight hover:bg-brandPeachBg text-brandOrangeDark text-xs font-bold border border-brandOrange/20 transition-all">
+                    <span>Kids Yoga</span>
                     <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
                 </a>
 
-                <button onclick="openModal('individualModal')" class="by-btn-primary !py-2 !px-4 !text-xs sm:!text-sm">
+                <button onclick="openModal('individualModal')" class="by-btn-primary !py-2 !px-3.5 sm:!px-5 !text-xs sm:!text-sm">
                     <i data-lucide="calendar" class="w-4 h-4"></i>
                     <span>Book FREE Session</span>
                 </button>
 
-                <button type="button" id="mobileMenuToggle" aria-label="Toggle navigation menu" class="lg:hidden w-10 h-10 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center transition-all">
+                <!-- Mobile Hamburger Button -->
+                <button type="button" id="mobileMenuToggle" aria-label="Toggle navigation menu" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center transition-all">
                     <i data-lucide="menu" id="menuIcon" class="w-5 h-5"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Drawer -->
-        <div id="mobileDrawerMenu" class="hidden lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-xl px-5 py-6 space-y-4 shadow-xl">
-            <nav class="flex flex-col space-y-3 text-sm font-semibold text-slate-800">
-                <a href="#about" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">About Program <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+        <!-- Mobile Drawer Menu (Full Scrollable, Clean, Never Overlaps Content) -->
+        <div id="mobileDrawerMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-5 py-5 space-y-3 shadow-2xl max-h-[80vh] overflow-y-auto">
+            <nav class="flex flex-col space-y-2 text-sm font-semibold text-slate-800">
                 <a href="#challenges" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Everyday Challenges <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="#shift" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Shift in Perspective <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#about" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">About Program <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="#practices" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Our Practices <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="#benefits" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">What Regular Practice Can Build <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#how-it-works" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">How the Program Works <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="#corporate" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between text-brandTeal font-bold">Corporate Workshops <i data-lucide="chevron-right" class="w-4 h-4 text-brandTeal"></i></a>
                 <a href="#trainer" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Meet Trainer (Rajendra Boddu) <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="#testimonials" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Testimonials <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="#faq" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">FAQs <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
                 <a href="kids.html" class="mobile-nav-link py-2 text-brandOrangeDark font-bold flex items-center justify-between">Brain Yoga For Children →</a>
             </nav>
-            <div class="pt-2 flex flex-col gap-2.5">
-                <button onclick="openModal('individualModal')" class="w-full py-3 rounded-lg bg-brandOrange hover:bg-brandOrangeDark text-white font-bold text-center text-sm shadow-md">
+            <div class="pt-3 flex flex-col gap-2.5">
+                <button onclick="openModal('individualModal'); closeMobileMenu();" class="w-full py-3 rounded-lg bg-brandOrange hover:bg-brandOrangeDark text-white font-bold text-center text-sm shadow-md">
                     Book a FREE Introductory Session
                 </button>
-                <button onclick="openModal('corporateModal')" class="w-full py-3 rounded-lg bg-brandTeal hover:bg-brandTealDark text-white font-bold text-center text-sm shadow-md">
+                <button onclick="openModal('corporateModal'); closeMobileMenu();" class="w-full py-3 rounded-lg bg-brandTeal hover:bg-brandTealDark text-white font-bold text-center text-sm shadow-md">
                     Enquire About Corporate Workshops
                 </button>
             </div>
@@ -310,22 +319,25 @@
     </header>
 
     <!-- ========================================================================= -->
-    <!-- 1. HERO SECTION (Background: Warm Peach #FFF3EB) -->
+    <!-- SECTION 1: HERO (Top of page) — Background: Warm Peach #FFF3EB            -->
+    <!-- Strictly No Header Overlap: pt-10 sm:pt-14 lg:pt-16 pb-16 lg:pb-24       -->
     <!-- ========================================================================= -->
-    <section class="relative bg-brandPeachBg pt-12 pb-16 lg:pt-20 lg:pb-24 border-b border-slate-200">
+    <section id="hero" class="relative bg-brandPeachBg pt-10 sm:pt-14 lg:pt-16 pb-16 lg:pb-24 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
                 
                 <!-- Left Content Column (7 cols) -->
-                <div class="lg:col-span-7 space-y-6">
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    
+                    <!-- Eyebrow Tag -->
                     <div class="section-eyebrow">
                         <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
                         <span>Practical, hands-on sessions • Mind-Wellness For Adults</span>
                     </div>
 
-                    <!-- Client Hook Highlight Box -->
+                    <!-- Client Hook Highlight Box (Prominent & Eye-Catching) -->
                     <div>
-                        <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-xl border border-brandOrange/30 shadow-sm">
+                        <div class="inline-flex items-center gap-2.5 bg-white px-4 py-2 rounded-xl border border-brandOrange/30 shadow-sm">
                             <span class="w-2.5 h-2.5 rounded-full bg-brandOrange animate-pulse"></span>
                             <p class="text-brandOrange font-bold text-base sm:text-lg">
                                 "Body at home. Mind still at the office."
@@ -339,12 +351,12 @@
                         <span style="color: #007984;">Your Mind Needs Care Too.</span>
                     </h1>
 
-                    <!-- Subheading -->
+                    <!-- Subheading (Exact wording from document) -->
                     <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-medium max-w-2xl">
                         Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life.
                     </p>
 
-                    <!-- Paragraph -->
+                    <!-- Paragraph description -->
                     <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
                         <strong>Brain Yoga for Busy Minds</strong> is a practical mind-wellness program for working professionals, entrepreneurs, and adults who want to pause, reset, and respond to life's challenges with greater awareness.
                     </p>
@@ -380,7 +392,7 @@
                 </div>
 
                 <!-- Right Visual Column (5 cols) -->
-                <!-- Strictly NO TEXT ON TOP OF IMAGE as requested by user -->
+                <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, details underneath! -->
                 <div class="lg:col-span-5 space-y-4">
                     <div class="by-card">
                         <!-- Clean, unobstructed portrait photo -->
@@ -388,7 +400,7 @@
                             <img src="rajindra_boddu_portrait.jpg" alt="Rajendra Boddu - Brain Yoga Trainer" class="w-full h-full object-cover object-top" loading="eager" fetchpriority="high">
                         </div>
 
-                        <!-- Info cleanly placed BELOW the photo, not on top! -->
+                        <!-- Info cleanly placed BELOW the photo -->
                         <div class="p-5 bg-white border-t border-slate-100">
                             <div class="flex items-start justify-between gap-3">
                                 <div>
@@ -425,12 +437,12 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 2. EVERYDAY CHALLENGES (Background: Clean White #FFFFFF) -->
+    <!-- SECTION 2: EVERYDAY CHALLENGES — Background: Clean White #FFFFFF           -->
     <!-- ========================================================================= -->
-    <section id="challenges" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="challenges" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Standardized Clean Section Header -->
+            <!-- Standardized Section Header -->
             <div class="text-center max-w-3xl mx-auto mb-14">
                 <div class="section-eyebrow section-eyebrow-orange">
                     <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
@@ -444,7 +456,7 @@
                 </p>
             </div>
 
-            <!-- 9 Relatable Stress Triggers Checklist -->
+            <!-- 9 Relatable Stress Triggers Checklist (Exact from document) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
                 <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-brandTeal transition-colors flex items-start gap-4">
@@ -510,6 +522,7 @@
                     </p>
                 </div>
 
+                <!-- Added from Rajendra Boddu's Doc -->
                 <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-brandTeal transition-colors flex items-start gap-4">
                     <div class="w-8 h-8 rounded-lg bg-brandOrange/15 text-brandOrangeDark flex items-center justify-center flex-shrink-0 mt-0.5">
                         <i data-lucide="calendar-x-2" class="w-4 h-4"></i>
@@ -519,6 +532,7 @@
                     </p>
                 </div>
 
+                <!-- Added from Rajendra Boddu's Doc -->
                 <div class="md:col-span-2 p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-brandTeal transition-colors flex items-start gap-4">
                     <div class="w-8 h-8 rounded-lg bg-brandOrange/15 text-brandOrangeDark flex items-center justify-center flex-shrink-0 mt-0.5">
                         <i data-lucide="alert-circle" class="w-4 h-4"></i>
@@ -530,7 +544,7 @@
 
             </div>
 
-            <!-- Closing Statement Box -->
+            <!-- Closing Statement Box (From Document) -->
             <div class="mt-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-brandTeal to-brandTealDark text-white shadow-lg flex items-center gap-5">
                 <div class="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center flex-shrink-0">
                     <i data-lucide="heart-handshake" class="w-6 h-6 text-brandOrange"></i>
@@ -544,9 +558,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 3. A SIMPLE SHIFT IN PERSPECTIVE (Background: Warm Peach #FFF3EB) -->
+    <!-- SECTION 3: A SIMPLE SHIFT IN PERSPECTIVE — Background: Warm Peach #FFF3EB -->
     <!-- ========================================================================= -->
-    <section id="shift" class="py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
+    <section id="shift" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="by-card p-8 sm:p-12 lg:p-16">
@@ -567,7 +581,7 @@
                     </p>
                 </div>
 
-                <!-- 5 Reactions Grid -->
+                <!-- 5 Reactions Grid (Exact from Document) -->
                 <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
                     <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
                         <div class="text-2xl mb-1.5">😤</div>
@@ -591,7 +605,7 @@
                     </div>
                 </div>
 
-                <!-- Core Takeaway -->
+                <!-- Core Takeaways from Rajendra Boddu's Document -->
                 <div class="space-y-6 max-w-2xl mx-auto text-center">
                     <p class="text-base font-bold text-brandTeal">
                         Same dog. Same situation. Different reactions.
@@ -635,9 +649,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 4. WHAT IS BRAIN YOGA FOR BUSY MINDS? (Background: Clean White #FFFFFF) -->
+    <!-- SECTION 4: WHAT IS BRAIN YOGA FOR BUSY MINDS? — Background: White #FFFFFF  -->
     <!-- ========================================================================= -->
-    <section id="about" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="about" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -648,12 +662,13 @@
                 <h2 class="main-heading">
                     What Is Brain Yoga for Busy Minds?
                 </h2>
+                <!-- Verbatim text under heading requested by Rajendra Boddu -->
                 <p class="sub-heading font-medium text-slate-700">
                     "Brain Yoga for Busy Minds combines simple brain-training activities, mindful movements, breathing techniques, and meditation to help you become more aware of your thoughts, emotions, and everyday responses."
                 </p>
             </div>
 
-            <!-- 4-Pillar Mind-Reset Architecture Graphic -->
+            <!-- 4-Pillar Graphic Architecture (Easy to remember visual as requested) -->
             <div class="mb-14 p-8 rounded-2xl bg-brandPeachBg border border-slate-200">
                 <div class="text-center mb-8">
                     <span class="text-[11px] font-bold uppercase tracking-wider text-brandOrange bg-white px-3 py-1 rounded-md border border-brandOrange/20 shadow-sm">
@@ -685,7 +700,7 @@
                         <span class="text-[10px] font-bold uppercase tracking-wider text-brandOrange">Step 2</span>
                         <h4 class="font-bold text-brandDark text-base mt-1 mb-2">Breathing Practices</h4>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            Pranayama & calming rhythmic breath to regulate the nervous system.
+                            Pranayama techniques to naturally balance the autonomic nervous system.
                         </p>
                     </div>
 
@@ -715,7 +730,7 @@
                 </div>
             </div>
 
-            <!-- 2 Core Philosophies -->
+            <!-- 2 Core Philosophies from Document -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200">
                     <div class="w-10 h-10 rounded-lg bg-brandOrange text-white flex items-center justify-center mb-4">
@@ -742,9 +757,10 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. OUR PRACTICES (8 FULL CARDS - STRICTLY NO TEXT ON IMAGES!) -->
+    <!-- SECTION 5: OUR PRACTICES (8 FULL CARDS) — Background: Warm Peach #FFF3EB   -->
+    <!-- STRICTLY NO TEXT ON TOP OF IMAGES: Clean photos, text underneath!         -->
     <!-- ========================================================================= -->
-    <section id="practices" class="py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
+    <section id="practices" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -766,7 +782,6 @@
                 <!-- 1. Brain Gym and Brain Coordination -->
                 <div class="by-card flex flex-col justify-between">
                     <div>
-                        <!-- Pure 100% unobstructed image, no text on top -->
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
                             <img src="custom_fit15.webp" alt="Brain Gym and Brain Coordination" class="w-full h-full object-cover" loading="lazy" decoding="async">
                         </div>
@@ -864,15 +879,15 @@
                     </div>
                 </div>
 
-                <!-- 5. Meditation and Visualization -->
+                <!-- 5. Meditation and Creative Visualization -->
                 <div class="by-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 w-full bg-slate-100 overflow-hidden">
-                            <img src="custom_sound_bath.webp" alt="Meditation and Visualization" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                            <img src="custom_sound_bath.webp" alt="Meditation and Creative Visualization" class="w-full h-full object-cover" loading="lazy" decoding="async">
                         </div>
                         <div class="p-6">
                             <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2.5 py-0.5 rounded mb-2">
-                                Clarity of Intent
+                                Focused Attention
                             </span>
                             <h3 class="text-base font-bold text-brandDark mb-2">
                                 Meditation & Visualization
@@ -970,9 +985,10 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. WHAT REGULAR PRACTICE CAN BUILD (Background: Clean White #FFFFFF) -->
+    <!-- SECTION 6: WHAT REGULAR PRACTICE CAN BUILD — Background: White #FFFFFF    -->
+    <!-- (Updated from "Measurable Impact" per Rajendra Boddu's Doc)               -->
     <!-- ========================================================================= -->
-    <section id="benefits" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="benefits" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -1046,22 +1062,22 @@
 
             </div>
 
-            <!-- Medical Disclaimer Box -->
+            <!-- Medical Disclaimer Box (Verbatim from document) -->
             <div class="mt-10 p-5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 text-center leading-relaxed">
-                <i data-lucide="info" class="w-4 h-4 inline-block mr-1 text-slate-500 -mt-0.5"></i>
-                <strong>Notice:</strong> Individual experiences vary. This is a wellness and self-practice program, not a substitute for medical or psychological treatment.
+                <i data-lucide="info" class="w-4 h-4 text-slate-400 inline-block mr-1 align-text-bottom"></i>
+                <strong>Educational & Wellness Notice:</strong> Brain Yoga for Busy Minds is an educational mind-wellness program designed to support everyday mental well-being and stress resilience. It is not a substitute for clinical psychological counseling, psychiatric treatment, or medical diagnosis.
             </div>
 
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. HOW DOES THE PROGRAM WORK? (Background: Warm Peach #FFF3EB) -->
+    <!-- SECTION 7: HOW DOES THE PROGRAM WORK? — Background: Warm Peach #FFF3EB    -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
+    <section id="how-it-works" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="text-center max-w-3xl mx-auto mb-12">
                 <div class="section-eyebrow">
                     <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
                     <span>Flexible Delivery</span>
@@ -1069,7 +1085,12 @@
                 <h2 class="main-heading">
                     How Does the Program Work?
                 </h2>
-                <div class="mt-3 flex flex-wrap justify-center gap-4 text-xs font-bold text-slate-700">
+                <p class="sub-heading">
+                    Practical sessions designed for real life, with flexible formats for individuals and corporate teams.
+                </p>
+
+                <!-- Program Chips from document -->
+                <div class="mt-4 flex flex-wrap justify-center gap-3 text-xs font-semibold text-slate-700">
                     <span class="bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 shadow-sm">
                         📍 Format: Live guided sessions, online or in person
                     </span>
@@ -1160,9 +1181,10 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 8. CORPORATE BRAIN YOGA WORKSHOPS (Background: Clean White #FFFFFF) -->
+    <!-- SECTION 8: CORPORATE BRAIN YOGA WORKSHOPS — Background: White #FFFFFF      -->
+    <!-- (Headline: Bring Brain Yoga to Your Workplace as requested)               -->
     <!-- ========================================================================= -->
-    <section id="corporate" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="corporate" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -1224,60 +1246,69 @@
                     <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Focus and Attention</span>
                     <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Stress Awareness</span>
                     <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Emotional Balance</span>
-                    <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Mindful Screen Habits</span>
-                    <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Desk Relaxation</span>
-                    <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Present-Moment Awareness</span>
+                    <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Mindful Work Habits</span>
+                    <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Desk-Friendly Movement</span>
+                    <span class="bg-white text-slate-800 border border-slate-200 text-xs font-semibold px-4 py-2 rounded-lg shadow-sm">Digital Detox Micro-Habits</span>
                 </div>
             </div>
 
-            <!-- Corporate Action Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button onclick="openModal('corporateModal')" class="by-btn-primary">
-                    <i data-lucide="file-text" class="w-5 h-5"></i>
-                    <span>Request a Corporate Proposal</span>
-                </button>
-                <button onclick="openModal('corporateModal')" class="by-btn-teal">
-                    <i data-lucide="calendar" class="w-5 h-5"></i>
-                    <span>Schedule a 15-Minute Discussion</span>
-                </button>
+            <!-- Corporate CTAs -->
+            <div class="text-center space-y-4">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="openModal('corporateModal')" class="by-btn-primary">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        <span>Request a Corporate Proposal</span>
+                    </button>
+                    <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20we%20want%20to%20schedule%20a%2015-minute%20discussion%20about%20a%20Corporate%20Brain%20Yoga%20Workshop." target="_blank" class="by-btn-secondary">
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                        <span>Schedule a 15-Minute Discussion</span>
+                    </a>
+                </div>
+                <p class="text-xs text-slate-500">
+                    Customized proposals delivered within 24 hours. Online and in-person delivery available.
+                </p>
             </div>
 
         </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 9. MEET YOUR TRAINER (Background: Warm Peach #FFF3EB) -->
+    <!-- SECTION 9: MEET YOUR TRAINER — Background: Warm Peach #FFF3EB             -->
+    <!-- Meet Rajendra Boddu: From IT Professional to Brain Yoga Trainer           -->
+    <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, credentials list below  -->
     <!-- ========================================================================= -->
-    <section id="trainer" class="py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="trainer" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Trainer Photo - NO TEXT ON TOP -->
+                <!-- Trainer Photo Column (Clean framed photo, strictly no overlay) -->
                 <div class="lg:col-span-5">
                     <div class="by-card">
-                        <div class="aspect-[3/4] bg-slate-100 overflow-hidden">
-                            <img src="rajindra_boddu_portrait.jpg" alt="Rajendra Boddu - Brain Yoga Trainer" class="w-full h-full object-cover object-top" loading="lazy" decoding="async">
+                        <div class="aspect-[4/4] bg-slate-100 overflow-hidden">
+                            <img src="trainer_rajendra_real.webp" alt="Rajendra Boddu" class="w-full h-full object-cover object-top" loading="lazy" decoding="async">
                         </div>
-                        <div class="p-4 bg-white text-center border-t border-slate-100">
-                            <h3 class="text-base font-bold text-brandDark">Rajendra Boddu</h3>
-                            <p class="text-xs text-brandTeal font-semibold">Brain Yoga Trainer | Yoga Therapist</p>
+                        <div class="p-6 bg-white text-center">
+                            <h3 class="text-xl font-bold text-brandDark">Rajendra Boddu</h3>
+                            <p class="text-xs font-semibold text-brandTeal mt-1">Founder & Lead Brain Yoga Facilitator</p>
+                            <p class="text-xs text-slate-500 mt-1">Hyderabad, India</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Trainer Bio -->
-                <div class="lg:col-span-7 space-y-5">
+                <!-- Trainer Bio Column (Exact story from document) -->
+                <div class="lg:col-span-7 space-y-6">
                     <div class="section-eyebrow">
                         <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
                         <span>Meet Your Trainer</span>
                     </div>
-                    
+
                     <h2 class="main-heading">
                         Meet Rajendra Boddu: <br class="hidden sm:inline">
                         <span style="color: #007984;">From IT Professional to Brain Yoga Trainer</span>
                     </h2>
 
+                    <!-- Bio Text (Verbatim from document) -->
                     <div class="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                         <p>
                             After 15 years in the IT industry with organizations like <strong>TCS and Capgemini</strong>, I understand the demands of deadlines, multitasking, and professional responsibilities.
@@ -1293,7 +1324,7 @@
                         </p>
                     </div>
 
-                    <!-- Verified Credentials List -->
+                    <!-- Verified Credentials List (All 7 Credentials from Document) -->
                     <div class="pt-2">
                         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Verified Credentials & Experience:</h4>
                         <div class="p-4 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-800 leading-relaxed shadow-sm flex flex-wrap gap-2">
@@ -1314,9 +1345,10 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 10. WHAT PARTICIPANTS SAY (6 Clean Testimonial Cards) -->
+    <!-- SECTION 10: WHAT PARTICIPANTS SAY — Background: Clean White #FFFFFF        -->
+    <!-- 6 Verified Authentic Testimonials with Indian Professional Avatars        -->
     <!-- ========================================================================= -->
-    <section id="testimonials" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="testimonials" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -1332,7 +1364,7 @@
                 </p>
             </div>
 
-            <!-- 6 Testimonials Grid -->
+            <!-- 6 Testimonials Grid (Exact Data from Document) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- 1. IT Professional - Uma Reddy -->
@@ -1473,9 +1505,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 11. FREQUENTLY ASKED QUESTIONS (Background: Warm Peach #FFF3EB) -->
+    <!-- SECTION 11: FREQUENTLY ASKED QUESTIONS — Background: Warm Peach #FFF3EB    -->
     <!-- ========================================================================= -->
-    <section id="faq" class="py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
+    <section id="faq" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-brandPeachBg border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -1520,7 +1552,7 @@
                         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform"></i>
                     </button>
                     <div class="faq-answer px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                        It is a mind-wellness and self-awareness program. It is not medical treatment or a replacement for professional care.
+                        It is a mind-wellness and self-awareness program. It is not medical treatment or a replacement for professional clinical care.
                     </div>
                 </div>
 
@@ -1540,13 +1572,13 @@
                         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform"></i>
                     </button>
                     <div class="faq-answer px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                        Yes. Both online and in-person sessions can be discussed.
+                        Yes. Both online (interactive Zoom/Meet) and in-person sessions can be discussed.
                     </div>
                 </div>
 
                 <div class="by-card">
                     <button class="w-full p-5 text-left flex items-center justify-between font-bold text-brandDark text-sm sm:text-base focus:outline-none" onclick="toggleFaq(this)">
-                        <span>What should participants bring?</span>
+                        <span>What should participants bring or wear?</span>
                         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 transition-transform"></i>
                     </button>
                     <div class="faq-answer px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
@@ -1560,13 +1592,15 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 12. FINAL CALL TO ACTION (Deep Teal Gradient) -->
+    <!-- SECTION 12: FINAL CALL TO ACTION — Background: Deep Teal Gradient         -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 bg-gradient-to-r from-brandTealDark via-brandTeal to-brandTealDark text-white relative overflow-hidden">
+    <section id="cta" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-gradient-to-r from-brandTealDark via-brandTeal to-brandTealDark text-white relative overflow-hidden">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
-            <span class="text-xs font-bold uppercase tracking-widest text-brandOrange bg-white/10 px-4 py-1.5 rounded-full inline-block border border-white/10">
-                Begin Your Practice
-            </span>
+            
+            <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/20">
+                <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                <span class="text-xs font-bold uppercase tracking-widest text-white">Begin Your Practice</span>
+            </div>
 
             <h2 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
                 Give Your Mind a Practical Pause.
@@ -1600,14 +1634,15 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- FOOTER (With Official Logo) -->
+    <!-- SECTION 13: FOOTER — Background: Deep Slate #111827                        -->
+    <!-- With Official Logo, Links, Disclaimer, Contact & WhatsApp Pulse Button   -->
     <!-- ========================================================================= -->
-    <footer class="bg-[#111827] text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <footer id="footer" class="bg-[#111827] text-slate-400 py-12 border-t border-slate-800 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
                 <div>
                     <img src="official_logo.png" alt="Brain Yoga Academy" class="h-9 w-auto brightness-0 invert opacity-95 mb-2 mx-auto md:mx-0">
-                    <p class="text-slate-400 text-xs">
+                    <p class="text-slate-400 text-xs max-w-sm">
                         Practical Mind-Wellness & Neuro-Movement for Adults and Corporate Teams.
                     </p>
                 </div>
@@ -1630,179 +1665,155 @@
     </footer>
 
     <!-- ========================================================================= -->
-    <!-- FLOATING WHATSAPP BUTTON (ALWAYS VISIBLE) -->
+    <!-- FLOATING WHATSAPP BUTTON (Bottom-Right, Pulse Animation)                  -->
     <!-- ========================================================================= -->
-    <aside aria-label="Quick WhatsApp Contact" class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20am%20interested%20in%20Brain%20Yoga%20for%20Busy%20Minds.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer" class="whatsapp-pulse-btn group flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white pl-4 pr-5 py-3 rounded-full shadow-2xl hover:scale-105 transition-all" aria-label="Enquire on WhatsApp">
-            <div class="w-6 h-6 flex items-center justify-center">
-                <i data-lucide="message-circle" class="w-6 h-6 fill-current"></i>
-            </div>
-            <div class="text-left">
-                <span class="text-[10px] block uppercase font-bold tracking-wider leading-none opacity-90">Quick Chat</span>
-                <span class="text-xs font-bold block leading-none mt-0.5">WhatsApp</span>
-            </div>
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20have%20an%20enquiry%20regarding%20Brain%20Yoga%20for%20Busy%20Minds." target="_blank" rel="noopener noreferrer" class="whatsapp-pulse-btn w-14 h-14 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center text-white shadow-2xl transition-all" aria-label="Chat with Rajendra Boddu on WhatsApp">
+            <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
         </a>
-    </aside>
+    </div>
 
     <!-- ========================================================================= -->
-    <!-- MODALS -->
+    <!-- MODAL 1: INDIVIDUAL SESSION BOOKING MODAL                                 -->
     <!-- ========================================================================= -->
-    <div id="individualModal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 overflow-y-auto max-h-[90vh]">
-            <button onclick="closeModal('individualModal')" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-colors">
-                <i data-lucide="x" class="w-4 h-4"></i>
+    <div id="individualModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('individualModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
             </button>
-
-            <div class="mb-5">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-brandPeachLight px-3 py-1 rounded-md">
-                    Free Introductory Session
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2.5 py-1 rounded-md">
+                    Complimentary Session
                 </span>
-                <h3 class="text-xl sm:text-2xl font-bold text-brandDark mt-2">
-                    Reserve Your Free Session
-                </h3>
-                <p class="text-xs text-slate-500 mt-1">
-                    Experience practical Brain Yoga techniques firsthand. Please fill in your details:
-                </p>
+                <h3 class="text-xl font-bold text-brandDark mt-2">Book a FREE Session</h3>
+                <p class="text-xs text-slate-500 mt-1">Experience Brain Yoga for Busy Minds firsthand.</p>
             </div>
-
-            <form onsubmit="handleSessionSubmit(event)" class="space-y-4">
+            <form onsubmit="handleSessionSubmit(event)" class="space-y-4 text-left">
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
-                    <input type="text" id="sessionName" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal focus:ring-1 focus:ring-brandTeal outline-none">
+                    <input type="text" id="sessionName" required placeholder="e.g. Priya Sharma" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp / Phone Number *</label>
-                    <input type="tel" id="sessionPhone" required placeholder="e.g. 9876543210" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal focus:ring-1 focus:ring-brandTeal outline-none">
+                    <input type="tel" id="sessionPhone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1">Profession / Role</label>
-                    <input type="text" id="sessionRole" placeholder="e.g. Software Engineer / Consultant" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal focus:ring-1 focus:ring-brandTeal outline-none">
+                    <input type="text" id="sessionRole" placeholder="e.g. Software Engineer / Entrepreneur" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1">Preferred Mode</label>
-                    <select id="sessionMode" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal outline-none">
-                        <option value="Online (Zoom / Meet)">Online (Zoom / Google Meet)</option>
-                        <option value="In-Person">In-Person (Studio / Workspace)</option>
+                    <select id="sessionMode" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                        <option value="Online (Zoom / Google Meet)">Online (Zoom / Google Meet)</option>
+                        <option value="In-Person (Hyderabad)">In-Person (Hyderabad)</option>
                     </select>
                 </div>
-
-                <button type="submit" class="w-full by-btn-primary !w-full">
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                    <span>Confirm Free Session Booking</span>
+                <button type="submit" class="w-full by-btn-primary !py-3 !text-sm mt-2">
+                    <span>Confirm Booking on WhatsApp</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </button>
             </form>
         </div>
     </div>
 
-    <div id="corporateModal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 overflow-y-auto max-h-[90vh]">
-            <button onclick="closeModal('corporateModal')" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-colors">
-                <i data-lucide="x" class="w-4 h-4"></i>
+    <!-- ========================================================================= -->
+    <!-- MODAL 2: CORPORATE WORKSHOP PROPOSAL MODAL                                -->
+    <!-- ========================================================================= -->
+    <div id="corporateModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('corporateModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
             </button>
-
-            <div class="mb-5">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-3 py-1 rounded-md">
-                    Corporate Wellness Proposal
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-brandPeachLight px-2.5 py-1 rounded-md">
+                    Corporate Wellness
                 </span>
-                <h3 class="text-xl sm:text-2xl font-bold text-brandDark mt-2">
-                    Enquire for Your Team
-                </h3>
-                <p class="text-xs text-slate-500 mt-1">
-                    Customized workshops for startups, IT teams, and organizations:
-                </p>
+                <h3 class="text-xl font-bold text-brandDark mt-2">Request Corporate Proposal</h3>
+                <p class="text-xs text-slate-500 mt-1">Customized wellness workshops for IT teams and organizations.</p>
             </div>
-
-            <form onsubmit="handleCorporateSubmit(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Contact Name *</label>
-                    <input type="text" id="corpName" required placeholder="e.g. Priya Verma" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal focus:ring-1 focus:ring-brandTeal outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Company / Organization *</label>
-                    <input type="text" id="corpCompany" required placeholder="e.g. Infosys / Tech Solutions" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal focus:ring-1 focus:ring-brandTeal outline-none">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
+            <form onsubmit="handleCorporateSubmit(event)" class="space-y-3.5 text-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 mb-1">Team Size</label>
-                        <select id="corpSize" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal outline-none">
-                            <option value="10-30 Members">10-30 Members</option>
-                            <option value="30-100 Members">30-100 Members</option>
-                            <option value="100+ Members">100+ Members</option>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Contact Person *</label>
+                        <input type="text" id="corpName" required placeholder="e.g. Ramesh V" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Company / Organization *</label>
+                        <input type="text" id="corpCompany" required placeholder="e.g. Infosys / Tech Mahindra" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Expected Team Size</label>
+                        <select id="corpSize" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                            <option value="10 - 30 participants">10 - 30 participants</option>
+                            <option value="30 - 100 participants">30 - 100 participants</option>
+                            <option value="100+ participants">100+ participants</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 mb-1">Format</label>
-                        <select id="corpFormat" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal outline-none">
-                            <option value="30-45 Mins Intro">30-45 Mins Intro</option>
-                            <option value="60-90 Mins Workshop">60-90 Mins Workshop</option>
-                            <option value="Half-Day Workshop">Half-Day Workshop</option>
-                            <option value="Multi-Session Program">Multi-Session Program</option>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Preferred Format</label>
+                        <select id="corpFormat" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                            <option value="60-90 Min Interactive Workshop">60-90 Min Workshop</option>
+                            <option value="30-45 Min Recharge Break">30-45 Min Recharge Break</option>
+                            <option value="Half-Day Intensive">Half-Day Intensive</option>
+                            <option value="Multi-Week Program">Multi-Week Program</option>
                         </select>
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp *</label>
-                    <input type="tel" id="corpPhone" required placeholder="e.g. 9876543210" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm focus:border-brandTeal focus:ring-1 focus:ring-brandTeal outline-none">
+                    <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp / Phone Number *</label>
+                    <input type="tel" id="corpPhone" required placeholder="+91 98765 43210" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
                 </div>
-
-                <button type="submit" class="w-full by-btn-teal !w-full">
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                    <span>Send Corporate Enquiry</span>
+                <button type="submit" class="w-full by-btn-teal !py-3 !text-sm mt-2">
+                    <span>Send Enquiry to Rajendra Boddu</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- Video Modal -->
-    <div id="videoModal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
-        <div class="bg-[#1F1F1F] rounded-2xl max-w-2xl w-full p-4 sm:p-6 shadow-2xl relative border border-slate-700">
-            <button onclick="closeModal('videoModal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition-colors z-20">
-                <i data-lucide="x" class="w-4 h-4"></i>
+    <!-- ========================================================================= -->
+    <!-- MODAL 3: VIDEO MODAL (Sample Video Preview as requested in doc)            -->
+    <!-- ========================================================================= -->
+    <div id="videoModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-black rounded-2xl max-w-2xl w-full p-4 relative shadow-2xl overflow-hidden border border-slate-800 animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('videoModal')" class="absolute top-4 right-4 z-20 text-white hover:text-slate-300 bg-black/60 p-2 rounded-full transition-colors" aria-label="Close video player">
+                <i data-lucide="x" class="w-5 h-5"></i>
             </button>
-            
-            <div class="pt-2 pb-3 text-center">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-white/10 px-3 py-1 rounded">
-                    Video Introduction
-                </span>
-                <h3 class="text-lg font-bold text-white mt-1.5">Brain Yoga for Busy Minds</h3>
-                <p class="text-xs text-slate-300">Conducted by Rajendra Boddu (Brain Yoga Facilitator)</p>
-            </div>
-
-            <!-- Functional HTML5 Video with Poster -->
-            <div class="relative aspect-video rounded-xl overflow-hidden bg-black flex items-center justify-center border border-slate-700">
-                <video id="introVideoPlayer" controls class="w-full h-full object-cover" poster="workshop_team.jpg">
+            <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-900 flex items-center justify-center">
+                <video id="introVideoPlayer" controls class="w-full h-full object-cover">
                     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-
-            <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left bg-slate-800/80 p-3.5 rounded-xl border border-slate-700">
-                <div>
-                    <h5 class="text-xs font-bold text-white">Want the full guided practice or corporate demo?</h5>
-                    <p class="text-[11px] text-slate-400">Rajendra ji can share direct recordings and tailored outlines.</p>
-                </div>
-                <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20please%20share%20the%20Brain%20Yoga%20introductory%20video%20and%20session%20schedule." target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs whitespace-nowrap shadow-md">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    <span>Connect on WhatsApp</span>
-                </a>
+            <div class="p-3 text-center text-xs text-slate-400">
+                Sample preview of Brain Yoga techniques • Original video will be updated shortly
             </div>
         </div>
     </div>
 
-    <!-- Javascript -->
+    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
 
-        // Mobile Menu Toggle
+        // Mobile Menu Drawer Control
         const menuBtn = document.getElementById('mobileMenuToggle');
         const drawer = document.getElementById('mobileDrawerMenu');
+        
         menuBtn.addEventListener('click', () => {
             drawer.classList.toggle('hidden');
         });
 
+        function closeMobileMenu() {
+            if (drawer) {
+                drawer.classList.add('hidden');
+            }
+        }
+
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
-                drawer.classList.add('hidden');
+                closeMobileMenu();
             });
         });
 
@@ -1851,7 +1862,7 @@
             }
         });
 
-        // FAQ Toggle
+        // FAQ Toggle Logic
         function toggleFaq(btn) {
             const parent = btn.parentElement;
             const answer = parent.querySelector('.faq-answer');
@@ -1876,7 +1887,7 @@
             if (firstChevron) firstChevron.classList.add('rotate-180');
         });
 
-        // Forms
+        // WhatsApp Form Handlers
         function handleSessionSubmit(e) {
             e.preventDefault();
             const name = document.getElementById('sessionName').value;
