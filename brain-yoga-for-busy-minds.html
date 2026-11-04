@@ -24,16 +24,16 @@
             theme: {
                 extend: {
                     colors: {
-                        tealBrand: '#0F6E8C',
-                        tealDark: '#0B6573',
-                        tealLight: '#E8F5F8',
-                        tealIce: '#DDF7FF',
-                        orangeBrand: '#F58220',
-                        orangeDark: '#E06D0C',
-                        orangeLight: '#FFF4EC',
-                        peachBg: '#FFF8F3',
-                        peachBgAlt: '#FFF6EE',
-                        navyBrand: '#0F2537',
+                        tealBrand: '#007984',
+                        tealDark: '#085C65',
+                        tealLight: '#E6F7F8',
+                        tealIce: '#D2F0FF',
+                        orangeBrand: '#FD8742',
+                        orangeDark: '#D36005',
+                        orangeLight: '#FFE8DA',
+                        peachBg: '#FFF3EB',
+                        peachBgAlt: '#FFEADB',
+                        navyBrand: '#1A2E35',
                     },
                     fontFamily: {
                         sans: ['Poppins', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
@@ -50,7 +50,7 @@
     <style>
         body {
             font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #0F2537;
+            color: #1A2E35;
             background-color: #FFFFFF;
             overflow-x: hidden;
             text-rendering: optimizeLegibility;
@@ -69,15 +69,15 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
             background-color: #E8F5F8;
-            color: #0F6E8C;
+            color: #007984;
             border: 1px solid rgba(15, 110, 140, 0.25);
             box-shadow: 0 1px 3px rgba(15, 110, 140, 0.08);
             margin-bottom: 0.85rem;
         }
 
         .section-badge-orange {
-            background-color: #FFF4EC;
-            color: #E06D0C;
+            background-color: #FFE8DA;
+            color: #D36005;
             border-color: rgba(245, 130, 32, 0.3);
         }
 
@@ -85,7 +85,7 @@
             font-size: 1.85rem;
             line-height: 1.2;
             font-weight: 900;
-            color: #0F2537;
+            color: #1A2E35;
             letter-spacing: -0.02em;
         }
         @media (min-width: 640px) {
@@ -118,7 +118,7 @@
         .heading-accent-bar {
             width: 4rem;
             height: 3.5px;
-            background: linear-gradient(90deg, #F58220, #0F6E8C);
+            background: linear-gradient(90deg, #FD8742, #007984);
             border-radius: 9999px;
             margin: 1rem auto 0 auto;
         }
@@ -142,7 +142,7 @@
         .clean-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 16px 32px -4px rgba(15, 110, 140, 0.12);
-            border-color: #0F6E8C;
+            border-color: #007984;
         }
 
         /* Fast smooth entrance animation for cards */
@@ -233,15 +233,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="busy-minds.html" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-tealBrand to-tealDark flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
-                    BY
-                </div>
-                <div>
-                    <span class="text-xl sm:text-2xl font-black text-navyBrand tracking-tight block leading-tight">
-                        Brain Yoga<span class="text-orangeBrand">.</span>
-                    </span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-tealBrand block -mt-0.5">For Busy Minds</span>
-                </div>
+                <img src="official_logo.png" alt="Brain Yoga Academy" class="h-10 sm:h-12 w-auto object-contain">
+                <span class="hidden sm:inline-block text-[11px] font-black uppercase tracking-wider text-[#007984] bg-[#E6F7F8] px-2.5 py-1 rounded-md border border-[#007984]/20">
+                    For Busy Minds
+                </span>
             </a>
 
             <!-- Desktop Navigation Links -->
@@ -266,7 +261,7 @@
                 </a>
 
                 <!-- CTA Button -->
-                <button onclick="openModal('individualModal')" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-orangeBrand to-orangeDark hover:brightness-105 text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all text-xs sm:text-sm shimmer-btn">
+                <button onclick="openModal('individualModal')" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-orangeBrand to-orangeDark hover:brightness-105 text-white px-5 py-2.5 rounded-xl font-bold shadow-md hover:shadow-lg transition-all text-xs sm:text-sm shimmer-btn">
                     <i data-lucide="calendar" class="w-4 h-4"></i>
                     <span>Book FREE Session</span>
                 </button>
@@ -304,9 +299,9 @@
     </header>
 
     <!-- ========================================================================= -->
-    <!-- 1. HERO SECTION (Background: Warm Peach #FFF8F3) -->
+    <!-- 1. HERO SECTION (Background: Warm Peach #FFF3EB) -->
     <!-- ========================================================================= -->
-    <section class="relative bg-peachBg pt-12 pb-16 lg:pt-20 lg:pb-28 overflow-hidden border-b border-slate-200">
+    <section class="relative bg-[#FFF3EB] pt-12 pb-16 lg:pt-20 lg:pb-28 overflow-hidden border-b border-slate-200">
         <!-- Subtle ambient radial lights -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-tealLight/70 blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-orangeLight blur-3xl pointer-events-none"></div>
@@ -444,7 +439,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
                 <!-- 1 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="clock" class="w-4 h-4"></i>
                     </div>
@@ -454,7 +449,7 @@
                 </div>
 
                 <!-- 2 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="zap-off" class="w-4 h-4"></i>
                     </div>
@@ -464,7 +459,7 @@
                 </div>
 
                 <!-- 3 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="smartphone" class="w-4 h-4"></i>
                     </div>
@@ -474,7 +469,7 @@
                 </div>
 
                 <!-- 4 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="users" class="w-4 h-4"></i>
                     </div>
@@ -484,7 +479,7 @@
                 </div>
 
                 <!-- 5 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="battery-low" class="w-4 h-4"></i>
                     </div>
@@ -494,7 +489,7 @@
                 </div>
 
                 <!-- 6 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="compass" class="w-4 h-4"></i>
                     </div>
@@ -504,7 +499,7 @@
                 </div>
 
                 <!-- 7 -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="message-square-off" class="w-4 h-4"></i>
                     </div>
@@ -514,7 +509,7 @@
                 </div>
 
                 <!-- 8 (Requested in document) -->
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="calendar-x-2" class="w-4 h-4"></i>
                     </div>
@@ -524,7 +519,7 @@
                 </div>
 
                 <!-- 9 (Requested in document) -->
-                <div class="reveal-card md:col-span-2 p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
+                <div class="reveal-card md:col-span-2 p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-start gap-4">
                     <div class="w-9 h-9 rounded-xl bg-orangeLight text-orangeBrand flex items-center justify-center flex-shrink-0 mt-0.5 border border-orangeBrand/20">
                         <i data-lucide="alert-circle" class="w-4 h-4"></i>
                     </div>
@@ -549,9 +544,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 3. A SIMPLE SHIFT IN PERSPECTIVE (Background: Light Peach #FFF6EE) -->
+    <!-- 3. A SIMPLE SHIFT IN PERSPECTIVE (Background: Light Peach #FFEADB) -->
     <!-- ========================================================================= -->
-    <section id="shift" class="py-16 sm:py-24 bg-peachBgAlt border-b border-slate-200">
+    <section id="shift" class="py-16 sm:py-24 bg-[#FFEADB] border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-200 shadow-xl">
@@ -576,23 +571,23 @@
 
                 <!-- The 5 Reactions Visual Cards -->
                 <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
-                    <div class="reveal-card bg-peachBg p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
+                    <div class="reveal-card bg-[#FFF3EB] p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
                         <div class="text-3xl mb-1.5">😤</div>
                         <p class="text-xs sm:text-sm font-bold text-slate-800">Some get irritated</p>
                     </div>
-                    <div class="reveal-card bg-peachBg p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
+                    <div class="reveal-card bg-[#FFF3EB] p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
                         <div class="text-3xl mb-1.5">😨</div>
                         <p class="text-xs sm:text-sm font-bold text-slate-800">Some feel frightened</p>
                     </div>
-                    <div class="reveal-card bg-peachBg p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
+                    <div class="reveal-card bg-[#FFF3EB] p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
                         <div class="text-3xl mb-1.5">📢</div>
                         <p class="text-xs sm:text-sm font-bold text-slate-800">Some shout at the dog</p>
                     </div>
-                    <div class="reveal-card bg-peachBg p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
+                    <div class="reveal-card bg-[#FFF3EB] p-4 rounded-2xl border border-slate-200 text-center shadow-sm hover:border-orangeBrand transition-all">
                         <div class="text-3xl mb-1.5">🚶</div>
                         <p class="text-xs sm:text-sm font-bold text-slate-800">Some simply walk away</p>
                     </div>
-                    <div class="reveal-card bg-peachBg p-4 rounded-2xl border border-tealBrand/40 text-center shadow-sm hover:border-tealBrand transition-all">
+                    <div class="reveal-card bg-[#FFF3EB] p-4 rounded-2xl border border-tealBrand/40 text-center shadow-sm hover:border-tealBrand transition-all">
                         <div class="text-3xl mb-1.5">😌</div>
                         <p class="text-xs sm:text-sm font-bold text-tealBrand">And some don't even react</p>
                     </div>
@@ -666,7 +661,7 @@
             </div>
 
             <!-- Visual Framework Graphic Requested: 4-Pillar Mind-Reset Graphic -->
-            <div class="mb-14 p-8 rounded-3xl bg-peachBg border border-slate-200 shadow-sm">
+            <div class="mb-14 p-8 rounded-3xl bg-[#FFF3EB] border border-slate-200 shadow-sm">
                 <div class="text-center mb-8">
                     <span class="text-[11px] font-extrabold uppercase tracking-widest text-orangeBrand bg-white px-3.5 py-1 rounded-full border border-orangeBrand/25 shadow-sm">
                         The 4-Pillar Mind-Reset Architecture
@@ -729,7 +724,7 @@
 
             <!-- 2 Summary Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="reveal-card p-6 sm:p-8 rounded-3xl bg-peachBg border border-slate-200">
+                <div class="reveal-card p-6 sm:p-8 rounded-3xl bg-[#FFF3EB] border border-slate-200">
                     <div class="w-10 h-10 rounded-xl bg-orangeBrand text-white flex items-center justify-center mb-4 shadow-sm">
                         <i data-lucide="refresh-cw" class="w-5 h-5"></i>
                     </div>
@@ -754,9 +749,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. OUR PRACTICES (8 CARDS) (Background: Light Peach #FFF8F3) -->
+    <!-- 5. OUR PRACTICES (8 CARDS) (Background: Light Peach #FFF3EB) -->
     <!-- ========================================================================= -->
-    <section id="practices" class="py-16 sm:py-24 bg-peachBg border-b border-slate-200">
+    <section id="practices" class="py-16 sm:py-24 bg-[#FFF3EB] border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Standardized Clear Section Header -->
@@ -1012,7 +1007,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
                     <div class="w-10 h-10 rounded-full bg-tealBrand text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
                     </div>
@@ -1021,7 +1016,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
                     <div class="w-10 h-10 rounded-full bg-tealBrand text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
                     </div>
@@ -1030,7 +1025,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
                     <div class="w-10 h-10 rounded-full bg-tealBrand text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
                     </div>
@@ -1039,7 +1034,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
                     <div class="w-10 h-10 rounded-full bg-tealBrand text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
                     </div>
@@ -1048,7 +1043,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
                     <div class="w-10 h-10 rounded-full bg-tealBrand text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
                     </div>
@@ -1057,7 +1052,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-5 rounded-2xl bg-peachBg border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
+                <div class="reveal-card p-5 rounded-2xl bg-[#FFF3EB] border border-slate-200 hover:border-tealBrand transition-colors flex items-center gap-4">
                     <div class="w-10 h-10 rounded-full bg-tealBrand text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                         <i data-lucide="check" class="w-5 h-5"></i>
                     </div>
@@ -1078,9 +1073,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. HOW DOES THE PROGRAM WORK? (Background: Light Peach #FFF6EE) -->
+    <!-- 7. HOW DOES THE PROGRAM WORK? (Background: Light Peach #FFEADB) -->
     <!-- ========================================================================= -->
-    <section class="py-16 sm:py-24 bg-peachBgAlt border-b border-slate-200">
+    <section class="py-16 sm:py-24 bg-[#FFEADB] border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Standardized Clear Section Header -->
@@ -1206,7 +1201,7 @@
             <!-- 4 Possible Formats -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 
-                <div class="reveal-card p-6 rounded-2xl bg-peachBg border border-slate-200 shadow-sm hover:border-tealBrand transition-colors">
+                <div class="reveal-card p-6 rounded-2xl bg-[#FFF3EB] border border-slate-200 shadow-sm hover:border-tealBrand transition-colors">
                     <div class="text-xs font-bold text-tealBrand uppercase tracking-wider mb-2">Express Break</div>
                     <h3 class="text-lg font-black text-navyBrand mb-2">30 to 45-Minute</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-normal">
@@ -1214,7 +1209,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-6 rounded-2xl bg-peachBg border-2 border-tealBrand shadow-md">
+                <div class="reveal-card p-6 rounded-2xl bg-[#FFF3EB] border-2 border-tealBrand shadow-md">
                     <div class="text-xs font-bold text-orangeBrand uppercase tracking-wider mb-2">Most Popular</div>
                     <h3 class="text-lg font-black text-navyBrand mb-2">60 to 90-Minute</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-normal">
@@ -1222,7 +1217,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-6 rounded-2xl bg-peachBg border border-slate-200 shadow-sm hover:border-tealBrand transition-colors">
+                <div class="reveal-card p-6 rounded-2xl bg-[#FFF3EB] border border-slate-200 shadow-sm hover:border-tealBrand transition-colors">
                     <div class="text-xs font-bold text-tealBrand uppercase tracking-wider mb-2">Intensive</div>
                     <h3 class="text-lg font-black text-navyBrand mb-2">Half-Day Workshop</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-normal">
@@ -1230,7 +1225,7 @@
                     </p>
                 </div>
 
-                <div class="reveal-card p-6 rounded-2xl bg-peachBg border border-slate-200 shadow-sm hover:border-tealBrand transition-colors">
+                <div class="reveal-card p-6 rounded-2xl bg-[#FFF3EB] border border-slate-200 shadow-sm hover:border-tealBrand transition-colors">
                     <div class="text-xs font-bold text-tealBrand uppercase tracking-wider mb-2">Sustained</div>
                     <h3 class="text-lg font-black text-navyBrand mb-2">Multi-Session Program</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-normal">
@@ -1241,7 +1236,7 @@
             </div>
 
             <!-- Topics Covered Badge Cloud -->
-            <div class="bg-peachBg p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm mb-10">
+            <div class="bg-[#FFF3EB] p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm mb-10">
                 <h4 class="text-sm font-extrabold text-navyBrand uppercase tracking-wider mb-4 text-center">
                     Workshop Topics May Include:
                 </h4>
@@ -1271,9 +1266,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 9. MEET YOUR TRAINER (Background: Light Peach #FFF8F3) -->
+    <!-- 9. MEET YOUR TRAINER (Background: Light Peach #FFF3EB) -->
     <!-- ========================================================================= -->
-    <section id="trainer" class="py-16 sm:py-24 bg-peachBg border-b border-slate-200">
+    <section id="trainer" class="py-16 sm:py-24 bg-[#FFF3EB] border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -1521,9 +1516,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 11. FREQUENTLY ASKED QUESTIONS (Background: Light Peach #FFF6EE) -->
+    <!-- 11. FREQUENTLY ASKED QUESTIONS (Background: Light Peach #FFEADB) -->
     <!-- ========================================================================= -->
-    <section id="faq" class="py-16 sm:py-24 bg-peachBgAlt border-b border-slate-200">
+    <section id="faq" class="py-16 sm:py-24 bg-[#FFEADB] border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Standardized Clear Section Header -->
@@ -1669,9 +1664,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
                 <div>
-                    <span class="text-lg font-black text-white tracking-tight">
-                        Brain Yoga<span class="text-orangeBrand">.</span>
-                    </span>
+                    <img src="official_logo.png" alt="Brain Yoga Academy" class="h-9 w-auto brightness-0 invert opacity-95 mb-2">
                     <p class="mt-1 text-slate-400 text-xs">
                         Practical Mind-Wellness & Neuro-Movement for Adults and Corporate Teams.
                     </p>
