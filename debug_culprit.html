@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cache Buster Meta Tags for Safari & Mobile Browsers -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Brain Yoga for Busy Minds | Mind-Wellness for Working Professionals & Corporate Teams</title>
+    <meta name="description" content="Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life. Founded by Rajendra Boddu (15 yrs IT veteran & Yoga Therapist).">
+    
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Brain Yoga for Busy Minds | Mind-Wellness for Working Professionals">
+    <meta property="og:description" content="Body at home. Mind still at the office. Develop calmness, focus, and emotional balance through practical Brain Yoga techniques.">
+    <meta property="og:image" content="rajendra_14_new.webp">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts: Poppins (Headings) + Inter (Body) — Exact Astra / Elementor match from kids.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandTeal: '#007984',       // Exact Children BY primary teal
+                        brandTealDark: '#085C65',   // Deep Teal
+                        brandTealLight: '#D2F0FF',  // Soft Teal Tint
+                        brandTealIce: '#D2F0FF',    // Exact Children BY ice blue card background
+                        brandOrange: '#FD8742',     // Exact Children BY orange CTA
+                        brandOrangeDark: '#D36005', // Exact Children BY dark orange
+                        brandPeachLight: '#FFE8DA', // Exact Children BY peach card tint
+                        brandPeachBg: '#FFF3EB',    // Exact Children BY soft warm peach background
+                        brandDark: '#1F1F1F',       // Clean dark heading text
+                        brandBody: '#334155',       // Clean, readable body text
+                    },
+                    fontFamily: {
+                        heading: ['Poppins', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        body: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        
+        /* Bulletproof Header & Logo Constraints across all devices */
+        header {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 99999 !important;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            backdrop-filter: blur(8px) !important;
+            border-bottom: 1px solid #E2E8F0 !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
+        .by-brand-logo {
+            height: 35px !important;
+            max-height: 35px !important;
+            width: auto !important;
+            max-width: 200px !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
+        @media (max-width: 640px) {
+            .by-brand-logo {
+                height: 25px !important;
+                max-height: 25px !important;
+                max-width: 145px !important;
+            }
+        }
+        footer img, footer a img {
+            height: 42px !important;
+            max-height: 42px !important;
+            width: auto !important;
+            max-width: 230px !important;
+            object-fit: contain !important;
+            display: inline-block !important;
+        }
+
+        /* Exact Typography Matching Children Brain Yoga (kids.html) */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 105px; /* Offset sticky header when navigating anchor links */
+        }
+        @media (max-width: 768px) {
+            html {
+                scroll-padding-top: 90px;
+            }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            line-height: 1.65;
+            color: #334155;
+            background-color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1F1F1F;
+            letter-spacing: -0.015em;
+        }
+
+        /* Standardized Section Eyebrows */
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1.15rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background-color: #D2F0FF;
+            color: #007984;
+            border: 1px solid rgba(0, 121, 132, 0.22);
+            margin-bottom: 0.85rem;
+        }
+
+        .section-eyebrow-orange {
+            background-color: #FFE8DA;
+            color: #D36005;
+            border-color: rgba(253, 135, 66, 0.28);
+        }
+
+        /* Standardized Section Headings */
+        .main-heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.95rem;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #1F1F1F;
+            letter-spacing: -0.02em;
+        }
+        @media (min-width: 640px) {
+            .main-heading {
+                font-size: 2.35rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .main-heading {
+                font-size: 2.75rem;
+            }
+        }
+
+        .sub-heading {
+            font-size: 1rem;
+            line-height: 1.65;
+            color: #475569;
+            max-width: 44rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.75rem;
+        }
+        @media (min-width: 640px) {
+            .sub-heading {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Elementor Standard Button Matching kids.html */
+        .by-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: #FD8742;
+            color: #FFFFFF;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(253, 135, 66, 0.28);
+            transition: all 0.25s ease;
+        }
+        .by-btn-primary:hover {
+            background-color: #D36005;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(211, 96, 5, 0.35);
+        }
+
+        .by-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: #FFFFFF;
+            color: #007984;
+            border: 2px solid #007984;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+        }
+        .by-btn-secondary:hover {
+            background-color: #D2F0FF;
+            transform: translateY(-2px);
+        }
+
+        .by-btn-teal {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: #007984;
+            color: #FFFFFF;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.85rem 1.75rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(0, 121, 132, 0.28);
+            transition: all 0.25s ease;
+        }
+        .by-btn-teal:hover {
+            background-color: #085C65;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(8, 92, 101, 0.35);
+        }
+
+        /* Clean Unified Card Style */
+        .by-card {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px -2px rgba(15, 37, 55, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            overflow: hidden;
+        }
+        .by-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px -4px rgba(0, 121, 132, 0.12);
+            border-color: #007984;
+        }
+
+        /* Modals */
+        .modal-backdrop {
+            background: rgba(15, 37, 55, 0.72);
+            backdrop-filter: blur(6px);
+        }
+
+        /* Floating WhatsApp pulse animation */
+        @keyframes pulseWa {
+            0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -4px rgba(37, 211, 102, 0.45); }
+            50% { transform: scale(1.05); box-shadow: 0 16px 35px 0px rgba(37, 211, 102, 0.65); }
+        }
+        .whatsapp-pulse-btn {
+            animation: pulseWa 3.2s infinite ease-in-out;
+        }
+    
+        /* ========================================================================= */
+        /* SILKY SMOOTH ANIMATIONS & MICRO-INTERACTIONS                              */
+        /* ========================================================================= */
+
+        /* Hero Entrance Keyframes */
+        @keyframes heroFadeDown {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -22px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes heroFadeUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 32px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes heroCardIn {
+            from {
+                opacity: 0;
+                transform: translate3d(36px, 18px, 0) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) scale(1);
+            }
+        }
+
+        @keyframes floatSubtle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        /* Hero Staggered Animation Classes */
+        .anim-hero-eyebrow {
+            animation: heroFadeDown 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+        }
+        .anim-hero-title {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
+        }
+        .anim-hero-sub {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+        }
+        .anim-hero-cta {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.46s both;
+        }
+        .anim-hero-badges {
+            animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.60s both;
+        }
+        .anim-hero-card {
+            animation: heroCardIn 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+        }
+
+        /* Subtle Gentle Card Float */
+        .hero-float-subtle {
+            animation: floatSubtle 6s ease-in-out 1.2s infinite;
+        }
+
+        /* Scroll-Triggered Reveal Animations */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+            transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-revealed {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* Grid Stagger Cascades */
+        .stagger-grid > * {
+            opacity: 0;
+            transform: translate3d(0, 32px, 0);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .stagger-grid.is-revealed > *:nth-child(1) { transition-delay: 0.04s; }
+        .stagger-grid.is-revealed > *:nth-child(2) { transition-delay: 0.10s; }
+        .stagger-grid.is-revealed > *:nth-child(3) { transition-delay: 0.16s; }
+        .stagger-grid.is-revealed > *:nth-child(4) { transition-delay: 0.22s; }
+        .stagger-grid.is-revealed > *:nth-child(5) { transition-delay: 0.28s; }
+        .stagger-grid.is-revealed > *:nth-child(6) { transition-delay: 0.34s; }
+        .stagger-grid.is-revealed > *:nth-child(7) { transition-delay: 0.40s; }
+        .stagger-grid.is-revealed > *:nth-child(8) { transition-delay: 0.46s; }
+        .stagger-grid.is-revealed > *:nth-child(9) { transition-delay: 0.52s; }
+        .stagger-grid.is-revealed > *:nth-child(10) { transition-delay: 0.58s; }
+
+        .stagger-grid.is-revealed > * {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* Silky Smooth Card Transitions & Hover Dynamics */
+        .by-card {
+            transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+        }
+        .by-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 36px -4px rgba(0, 121, 132, 0.14);
+            border-color: #007984;
+        }
+
+        /* Image Micro-Zoom inside cards */
+        .by-card-zoom img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .by-card-zoom:hover img {
+            transform: scale(1.04);
+        }
+
+        /* Interactive Button Micro-Press States */
+        .by-btn-primary {
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .by-btn-primary:active {
+            transform: scale(0.97) translateY(0);
+        }
+        .by-btn-secondary {
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .by-btn-secondary:active {
+            transform: scale(0.97);
+        }
+
+        /* Safe fallback for users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal-on-scroll, .stagger-grid > * {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+
+    </style>
+</head>
+<body class="selection:bg-brandOrange selection:text-white">
+
+    <!-- ========================================================================= -->
+    <!-- TOP ANNOUNCEMENT BAR: BRAIN YOGA FOR CHILDREN LINK                        -->
+    <!-- ========================================================================= -->
+    <aside aria-label="Program Announcement" class="bg-[#007984] py-2 px-3 sm:px-4 text-center text-xs font-semibold text-white shadow-xs">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap text-center leading-tight">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brandOrange text-white whitespace-nowrap">
+                Child Wellness
+            </span>
+            <span class="text-[11px] sm:text-xs">Looking for our proven memory & concentration training for kids?</span>
+            <a href="https://brainyogaacademy.com/" class="inline-flex items-center gap-1 font-bold text-[#FFE8DA] hover:text-white hover:underline transition-colors whitespace-nowrap text-[11px] sm:text-xs">
+                <span>Visit Brain Yoga For Children</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+        </div>
+    </aside>
+
+    <!-- ========================================================================= -->
+    <!-- TOP STICKY NAVBAR (Bulletproof Responsive: Desktop, Laptop, Tablet, Mobile)-->
+    <!-- ========================================================================= -->
+    <header class="sticky top-0 z-50 w-full bg-white/98 backdrop-blur-md border-b border-slate-200 shadow-xs transition-all">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between gap-2 sm:gap-4">
+            
+            <!-- Official Brand Logo -->
+            <a href="https://brainyogaacademy.com/brain-yoga-for-busy-minds/" class="flex items-center gap-2 sm:gap-2.5 flex-shrink-0 no-underline" style="display: flex !important; align-items: center !important; text-decoration: none !important;">
+                <img decoding="async" src="https://brainyogaacademy.com/wp-content/uploads/2026/11/official_logo.png" alt="Brain Yoga Academy" class="by-brand-logo" style="width: auto !important; object-fit: contain !important; display: block !important;">
+                <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2 py-0.5 rounded-md border border-brandTeal/20 whitespace-nowrap">
+                    For Busy Minds
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links (Responsive xl:flex with clean spacing) -->
+            <nav class="hidden xl:flex items-center gap-2.5 2xl:gap-5 text-xs 2xl:text-sm font-semibold text-slate-700 whitespace-nowrap">
+                <a href="#challenges" class="hover:text-brandTeal transition-colors">Everyday Challenges</a>
+                <a href="#shift" class="hover:text-brandTeal transition-colors">Shift in Perspective</a>
+                <a href="#about" class="hover:text-brandTeal transition-colors">About</a>
+                <a href="#practices" class="hover:text-brandTeal transition-colors">Our Practices</a>
+                <a href="#benefits" class="hover:text-brandTeal transition-colors">Gains</a>
+                <a href="#corporate" class="hover:text-brandTeal transition-colors text-brandTeal font-bold">Corporate</a>
+                <a href="#trainer" class="hover:text-brandTeal transition-colors">Trainer</a>
+                <a href="#testimonials" class="hover:text-brandTeal transition-colors">Testimonials</a>
+                <a href="#faq" class="hover:text-brandTeal transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Header Action CTAs -->
+            <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
+                <a href="https://brainyogaacademy.com/" class="hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brandPeachLight hover:bg-brandPeachBg text-brandOrangeDark text-xs font-bold border border-brandOrange/20 transition-all">
+                    <span>Kids Yoga</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </a>
+
+                <button onclick="openModal('individualModal')" class="by-btn-primary !py-1.5 sm:!py-2 !px-2.5 sm:!px-4 !text-[11px] sm:!text-sm flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+                    <span class="hidden sm:inline">Book FREE Session</span>
+                    <span class="sm:hidden">Book Free</span>
+                </button>
+
+                <!-- Mobile & Tablet Hamburger Button (Visible on < 1280px) -->
+                <button type="button" id="mobileMenuToggle" aria-label="Toggle navigation menu" class="xl:hidden w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center transition-all flex-shrink-0">
+                    <i data-lucide="menu" id="menuIcon" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile & Tablet Drawer Menu (Full Scrollable, Clean) -->
+        <div id="mobileDrawerMenu" class="hidden xl:hidden border-t border-slate-200 bg-white px-5 py-5 space-y-3 shadow-2xl max-h-[80vh] overflow-y-auto">
+            <nav class="flex flex-col space-y-2 text-sm font-semibold text-slate-800">
+                <a href="#challenges" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Everyday Challenges <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#shift" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Shift in Perspective <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#about" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">About Program <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#practices" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Our Practices <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#benefits" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">What Regular Practice Can Build <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#how-it-works" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">How the Program Works <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#corporate" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between text-brandTeal font-bold">Corporate Workshops <i data-lucide="chevron-right" class="w-4 h-4 text-brandTeal"></i></a>
+                <a href="#trainer" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Meet Trainer (Rajendra Boddu) <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#testimonials" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">Testimonials <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="#faq" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center justify-between">FAQs <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i></a>
+                <a href="https://brainyogaacademy.com/" class="mobile-nav-link py-2 text-brandOrangeDark font-bold flex items-center justify-between">Brain Yoga For Children →</a>
+            </nav>
+            <div class="pt-3 flex flex-col gap-2.5">
+                <button onclick="openModal('individualModal'); closeMobileMenu();" class="w-full py-3 rounded-lg bg-brandOrange hover:bg-brandOrangeDark text-white font-bold text-center text-sm shadow-md">
+                    Book a FREE Introductory Session
+                </button>
+                <button onclick="openModal('corporateModal'); closeMobileMenu();" class="w-full py-3 rounded-lg bg-brandTeal hover:bg-brandTealDark text-white font-bold text-center text-sm shadow-md">
+                    Enquire About Corporate Workshops
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 1: HERO (Top of page) — Background: Warm Peach #FFF3EB            -->
+    <!-- Strictly No Header Overlap: pt-10 sm:pt-14 lg:pt-16 pb-16 lg:pb-24       -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 1: HERO (Top of page) — Background: Warm Peach #FFF3EB            -->
+    <!-- Mobile-Refined & Uncluttered: Balanced Spacing, No Overcrowding            -->
+    <!-- ========================================================================= -->
+    <section id="hero" class="relative bg-[#FFE8DA] pt-6 pb-12 sm:pt-10 sm:pb-16 lg:pt-16 lg:pb-24 border-b border-orange-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                
+                <!-- Left Content Column (7 cols) -->
+                <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
+                    
+                    <!-- Eyebrow & Client Hook (Streamlined, punchy, no mobile clutter) -->
+                    <div class="anim-hero-eyebrow flex flex-wrap items-center gap-2">
+                        <div class="inline-flex items-center gap-1.5 bg-brandTealLight px-3 py-1 rounded-full border border-brandTeal/20 text-[11px] font-bold uppercase tracking-wider text-brandTeal">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                            <span>Mind-Wellness For Adults</span>
+                        </div>
+                        <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-brandOrange/30 shadow-xs text-xs sm:text-sm font-bold text-brandOrangeDark">
+                            <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
+                            <span>"Body at home. Mind still at the office."</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Headline (Crisp, bold, perfectly responsive) -->
+                    <h1 class="anim-hero-title font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brandDark tracking-tight leading-[1.25]">
+                        Deadlines. Pressure. Responsibilities. <br class="hidden sm:inline">
+                        <span style="color: #007984;">Is Your Mind Getting a Break?</span>
+                    </h1>
+
+                    <!-- Subheading (Exact wording from Rajendra Boddu's Document) -->
+                    <div class="anim-hero-sub space-y-3"><p class="text-sm sm:text-base md:text-lg text-slate-700 leading-relaxed font-normal max-w-2xl">
+                        Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life.
+                    </p>
+
+                    <!-- Paragraph description (Visible on tablet/desktop, streamlined on mobile) -->
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl hidden sm:block">
+                        <strong>Brain Yoga for Busy Minds</strong> is a practical mind-wellness program for working professionals, entrepreneurs, and adults who want to pause, reset, and respond to life's challenges with greater awareness.
+                    </p>
+
+                    </div>
+
+                    <!-- CTAs (Prominent on mobile, side-by-side on desktop) -->
+                    <div class="anim-hero-cta pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                        <button onclick="openModal('individualModal')" class="by-btn-primary !w-full sm:!w-auto !py-3 !text-sm">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                            <span>Book a FREE Introductory Session</span>
+                        </button>
+                        
+                        <button onclick="openModal('corporateModal')" class="by-btn-secondary !w-full sm:!w-auto !py-2.5 sm:!py-3 !text-xs sm:!text-sm">
+                            <i data-lucide="building-2" class="w-4 h-4"></i>
+                            <span>Enquire Corporate Workshops</span>
+                        </button>
+                    </div>
+
+                    <!-- Trust Tags (Single-line micro strip) -->
+                    <div class="anim-hero-badges pt-1 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs font-semibold text-slate-600">
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-brandTeal"></i>
+                            <span>Hands-on sessions</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="monitor" class="w-3.5 h-3.5 text-brandTeal"></i>
+                            <span>Online & In-Person</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="briefcase" class="w-3.5 h-3.5 text-brandOrange"></i>
+                            <span>Corporate & Individual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column (5 cols) -->
+                <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, unified bottom bar! -->
+                <div class="lg:col-span-5 flex flex-col justify-center">
+                    <div class="anim-hero-card hero-float-subtle by-card max-w-sm sm:max-w-md mx-auto w-full overflow-hidden shadow-lg border border-slate-200/80 bg-white">
+                        <!-- Clean, unobstructed full portrait photo (100% visible, no half cut) -->
+                        <div class="relative w-full bg-slate-100 overflow-hidden">
+                            <img src="rajendra_14_new.webp" alt="Rajendra Boddu - Brain Yoga Trainer" class="w-full h-auto block object-cover" loading="eager" fetchpriority="high">
+                        </div>
+
+                        <!-- Single Sleek Footer Bar Below Photo -->
+                        <div class="p-4 sm:p-5 bg-white border-t border-slate-100 flex items-center justify-between gap-3">
+                            <div class="min-w-0">
+                                <div class="flex items-center gap-2">
+                                    <h3 class="text-base sm:text-lg font-bold text-brandDark truncate">Rajendra Boddu</h3>
+                                    <span class="text-[9px] font-bold uppercase tracking-wider text-brandOrange bg-brandPeachLight px-2 py-0.5 rounded border border-brandOrange/20 whitespace-nowrap">Lead Trainer</span>
+                                </div>
+                                <p class="text-xs text-slate-500 truncate mt-0.5">15 Yrs IT Veteran & Certified Yoga Therapist</p>
+                            </div>
+                            
+                            <!-- Compact 2-Min Demo Video Button -->
+                            <button onclick="openVideoModal()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-brandTealLight hover:bg-brandTeal hover:text-white text-brandTeal text-xs font-bold border border-brandTeal/20 transition-all shadow-xs flex-shrink-0" aria-label="Watch 2-minute introductory video">
+                                <i data-lucide="play" class="w-3.5 h-3.5 fill-current text-brandOrange"></i>
+                                <span>2-Min Demo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 2: EVERYDAY CHALLENGES — Background: Clean White #FFFFFF           -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 2: EVERYDAY CHALLENGES — Background: Light Teal Blue (#D2F0FF)    -->
+    <!-- Soft light teal background with 9 crisp white trigger cards               -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 2: EVERYDAY CHALLENGES — Background: Clean White #FFFFFF           -->
+    <!-- Authentic #D2F0FF (Ice Teal Blue) cards matching kids.html Section 3       -->
+    <!-- ========================================================================= -->
+    <section id="challenges" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
+                <div class="section-eyebrow">
+                    <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
+                    <span>Everyday Reality Check</span>
+                </div>
+                <h2 class="main-heading">
+                    Does This Sound Familiar? <span style="color: #007984;">You're Not Alone.</span>
+                </h2>
+                <p class="sub-heading">
+                    Your work is important. But what about your mental well-being?
+                </p>
+            </div>
+
+            <!-- 9 Relatable Trigger Cards in Exact #D2F0FF Ice Teal Blue from kids.html -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="compass" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Constant Distraction</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Struggling to stay focused while working or studying?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="smartphone" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Compulsive Phone Checking</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Reaching for your phone repeatedly without realizing it?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="battery-low" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Energy Crash by Afternoon</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Starting your day motivated, but running on empty by mid-afternoon?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Frequent Irritation</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Getting easily irritated, stressed, or emotionally drained by small interruptions?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Overthinking at Bedtime</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Replaying conversations, tasks, and worries long after the workday is done?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="monitor" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Digital Brain Fog</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Back-to-back meetings, chats, and tabs leaving your mind buzzing and scattered?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="repeat" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Routine Resistance</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Knowing you should pause or stretch, but trapped in the cycle of "one more task"?</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="coffee" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Restless Rest</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">Even on weekends, your mind stays locked in work mode and emergency readiness?</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 p-5 rounded-xl bg-[#D2F0FF] border-2 border-transparent hover:border-[#007984] hover:shadow-md transition-all flex items-start gap-4 shadow-xs">
+                    <div class="w-8 h-8 rounded-lg bg-brandOrange text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-brandDark mb-1">Capable, But Constantly Operating at Mental Capacity</h3>
+                        <p class="text-xs text-slate-700 leading-relaxed">You handle your responsibilities well — but beneath the surface, your nervous system is in a state of unending overdrive.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-xs text-slate-600 max-w-xl mx-auto">
+                    These are not personal shortcomings. They are the natural response of an overloaded nervous system navigating constant digital stimulation.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 3: A SIMPLE SHIFT IN PERSPECTIVE — Background: Warm Peach #FFF3EB -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 3: A SIMPLE SHIFT IN PERSPECTIVE — Background: Warm Peach #FFF3EB -->
+    <!-- Upgraded: Executive Mindset Transformation (No emojis, high-end polish)    -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 3: A SIMPLE SHIFT IN PERSPECTIVE — Background: Warm Peach #FFF3EB -->
+    <!-- With Story Illustration, Expressive Emojis & Cognitive Framework          -->
+    <!-- ========================================================================= -->
+    <section id="shift" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+                <div class="section-eyebrow">
+                    <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
+                    <span>A Simple Shift in Perspective</span>
+                </div>
+                <h2 class="main-heading">
+                    10 People. 1 Barking Dog. <br class="hidden sm:inline">
+                    <span style="color: #FD8742;">What Makes the Difference?</span>
+                </h2>
+                <p class="sub-heading font-medium text-slate-700">
+                    Imagine 10 people walking down a street. Suddenly, a dog starts barking at them.
+                </p>
+            </div>
+
+            <!-- Story Visual Illustration Card (Strictly NO text on top of image) -->
+            <div class="reveal-on-scroll by-card mb-10 overflow-hidden">
+                <div class="aspect-[16/9] sm:aspect-[21/9] w-full bg-slate-100 overflow-hidden">
+                    <img src="barking_dog_new.webp" alt="10 People and 1 Barking Dog - Mindset Metaphor" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                </div>
+                <div class="p-4 sm:p-5 bg-white border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">🐕</span>
+                        <p class="text-xs sm:text-sm font-semibold text-slate-700">
+                            <strong>The Situation:</strong> One stimulus. Ten individuals. Five completely different reactions.
+                        </p>
+                    </div>
+                    <span class="text-[11px] font-bold text-brandTeal bg-brandTealLight px-3 py-1 rounded-full border border-brandTeal/20 whitespace-nowrap">
+                        Perception vs Reality
+                    </span>
+                </div>
+            </div>
+
+            <!-- The 5 Reactions: Expressive Emojis + Professional Labels -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-4 mb-10">
+                
+                <!-- Reaction 1 -->
+                <div class="by-card p-4 sm:p-5 text-center flex flex-col items-center justify-between hover:border-amber-400 transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center mb-3 border border-amber-200 shadow-2xs">
+                        <span class="text-2xl" role="img" aria-label="Irritated">😤</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-amber-700 uppercase tracking-wider block mb-1">Frustration</span>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800">Some get irritated</p>
+                    </div>
+                </div>
+
+                <!-- Reaction 2 -->
+                <div class="by-card p-4 sm:p-5 text-center flex flex-col items-center justify-between hover:border-rose-400 transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center mb-3 border border-rose-200 shadow-2xs">
+                        <span class="text-2xl" role="img" aria-label="Frightened">😨</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-rose-700 uppercase tracking-wider block mb-1">Anxiety</span>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800">Some feel frightened</p>
+                    </div>
+                </div>
+
+                <!-- Reaction 3 -->
+                <div class="by-card p-4 sm:p-5 text-center flex flex-col items-center justify-between hover:border-brandOrange transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-orange-50 flex items-center justify-center mb-3 border border-brandOrange/30 shadow-2xs">
+                        <span class="text-2xl" role="img" aria-label="Shouting">🗣️</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-brandOrangeDark uppercase tracking-wider block mb-1">Aggression</span>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800">Some shout at the dog</p>
+                    </div>
+                </div>
+
+                <!-- Reaction 4 -->
+                <div class="by-card p-4 sm:p-5 text-center flex flex-col items-center justify-between hover:border-slate-400 transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center mb-3 border border-slate-200 shadow-2xs">
+                        <span class="text-2xl" role="img" aria-label="Walking away">🚶‍♂️</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-slate-600 uppercase tracking-wider block mb-1">Avoidance</span>
+                        <p class="text-xs sm:text-sm font-bold text-slate-800">Some simply walk away</p>
+                    </div>
+                </div>
+
+                <!-- Reaction 5 (Highlighted Brain Yoga Mindful State) -->
+                <div class="col-span-2 sm:col-span-1 by-card p-4 sm:p-5 text-center flex flex-col items-center justify-between bg-gradient-to-b from-brandTealLight to-white border-2 border-brandTeal shadow-md">
+                    <div class="w-12 h-12 rounded-2xl bg-brandTeal flex items-center justify-center mb-3 shadow-sm">
+                        <span class="text-2xl" role="img" aria-label="Conscious calm">🧘‍♂️</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-brandTeal uppercase tracking-wider block mb-1">Mindful Composure</span>
+                        <p class="text-xs sm:text-sm font-bold text-brandDark">And some don't even react</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- The Cognitive Transformation Framework: Reaction vs Response -->
+            <div class="by-card p-6 sm:p-10 lg:p-12 mb-10">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-3 py-1 rounded-full border border-brandTeal/20">
+                        The Core Insight
+                    </span>
+                    <h3 class="text-xl sm:text-2xl font-bold text-brandDark mt-3">
+                        Same dog. Same situation. Different reactions.
+                    </h3>
+                    <p class="text-sm sm:text-base text-slate-600 mt-2">
+                        <strong>It's not always the situation. It's how we perceive and respond to it.</strong>
+                    </p>
+                </div>
+
+                <!-- Side-by-Side Mental Shift Visual -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+                    
+                    <!-- Left: Automatic Reaction -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-2.5 py-1 rounded-md border border-rose-200">
+                                    Default Habit
+                                </span>
+                                <span class="text-lg">⚡</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-brandDark mb-2">Automatic Reaction</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                External events immediately dictate your stress level. Instant irritation, defensive responses, emotional exhaustion, and reactive decisions.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                            <span>Trigger ➔ Immediate Impulse</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Conscious Response (Brain Yoga) -->
+                    <div class="p-6 rounded-2xl bg-brandTealLight/40 border-2 border-brandTeal/40 flex flex-col justify-between relative shadow-sm">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-xs font-bold uppercase tracking-wider text-brandTeal bg-white px-2.5 py-1 rounded-md border border-brandTeal/20">
+                                    Brain Yoga Shift
+                                </span>
+                                <span class="text-lg">🌿</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-brandDark mb-2">Conscious Response</h4>
+                            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+                                A trained micro-pause between trigger and action. You observe the situation calmly, recognize your thoughts, and respond with intentional composure.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-brandTeal/20 text-xs font-bold text-brandTeal flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                            <span>Trigger ➔ Mindful Pause ➔ Intentional Response</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Epiphany Quote Banner (Verbatim from Rajendra Boddu's Document) -->
+                <div class="mt-8 p-6 sm:p-8 rounded-2xl bg-white border-2 border-brandOrange/40 text-center shadow-md">
+                    <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-brandTeal bg-[#D2F0FF] px-3 py-1 rounded-md mb-2 border border-[#007984]/20">The Fundamental Truth</span>
+                    <p class="text-xl sm:text-2xl font-extrabold text-brandDark tracking-tight">
+                        "It's never just the dog. <span style="color: #FD8742;">It's the mindset.</span>"
+                    </p>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-xl mx-auto leading-relaxed">
+                        Your situations may not always be under your control. But with awareness and practice, you can learn to respond differently.
+                    </p>
+                    <div class="pt-4">
+                        <button onclick="openModal('individualModal')" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brandOrange hover:bg-brandOrangeDark text-white text-xs sm:text-sm font-bold shadow-md transition-all">
+                            <span>Experience this shift in a session</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 4: WHAT IS BRAIN YOGA FOR BUSY MINDS? — Background: White #FFFFFF  -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 4: WHAT IS BRAIN YOGA — Background: Light Teal Blue (#D2F0FF)      -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 4: WHAT IS BRAIN YOGA — Background: Clean White #FFFFFF            -->
+    <!-- Matching kids.html Section 5 ("How Does Brain Balance Help?")              -->
+    <!-- ========================================================================= -->
+    <section id="about" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
+                <div class="section-eyebrow">
+                    <span class="w-2 h-2 rounded-full bg-brandTeal"></span>
+                    <span>The Core Philosophy</span>
+                </div>
+                <h2 class="main-heading">
+                    What Is <span style="color: #007984;">Brain Yoga for Busy Minds?</span>
+                </h2>
+                <p class="sub-heading font-medium text-slate-700">
+                    "Brain Yoga for Busy Minds combines simple brain-training activities, mindful movements, breathing techniques, and meditation to help you become more aware of your thoughts, emotions, and everyday responses."
+                </p>
+            </div>
+
+            <!-- 4-Pillar Graphic Architecture (Exact colors #D2F0FF and #FFE8DA) -->
+            <div class="mb-14 p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-xs">
+                <div class="text-center mb-8">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-brandOrange bg-[#FFE8DA] px-3 py-1 rounded-md border border-brandOrange/20 shadow-xs">
+                        The 4-Pillar Mind-Reset Arc
+                    </span>
+                    <h3 class="text-lg font-bold text-brandDark mt-2">Not Just Relaxation. A Practical Way to Train Your Mind.</h3>
+                </div>
+
+                <div class="stagger-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 rounded-xl bg-[#D2F0FF] border border-[#007984]/25 text-center hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-[#007984] text-white flex items-center justify-center font-bold text-base mb-3 shadow-xs">01</div>
+                        <h4 class="font-bold text-brandDark text-sm mb-1.5">Brain-Training Activities</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Break habitual mental autopilot and stimulate neuroplastic pathways.</p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-[#FFE8DA] border border-orange-200/80 text-center hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-[#FD8742] text-white flex items-center justify-center font-bold text-base mb-3 shadow-xs">02</div>
+                        <h4 class="font-bold text-brandDark text-sm mb-1.5">Mindful Movements</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Release physical stiffness and ground attention back into the body.</p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-[#D2F0FF] border border-[#007984]/25 text-center hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-[#007984] text-white flex items-center justify-center font-bold text-base mb-3 shadow-xs">03</div>
+                        <h4 class="font-bold text-brandDark text-sm mb-1.5">Breathing Practices</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Downshift the sympathetic nervous system and soothe stress spikes.</p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-[#FFE8DA] border border-orange-200/80 text-center hover:shadow-md transition-all">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-[#FD8742] text-white flex items-center justify-center font-bold text-base mb-3 shadow-xs">04</div>
+                        <h4 class="font-bold text-brandDark text-sm mb-1.5">Inner Stillness & Meditation</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">Cultivate unshakeable focus and non-reactive cognitive spaciousness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Mind-Body Connection Pillars -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="by-card p-6 bg-white border border-slate-200 shadow-xs hover:border-[#007984] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[#D2F0FF] text-[#007984] flex items-center justify-center mb-4">
+                        <i data-lucide="brain" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-brandDark mb-2">Notice Thoughts Early</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Recognize spiraling thoughts before they hijack your focus, conversations, or evening rest.
+                    </p>
+                </div>
+
+                <div class="by-card p-6 bg-white border border-slate-200 shadow-xs hover:border-[#007984] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[#FFE8DA] text-brandOrange flex items-center justify-center mb-4">
+                        <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-brandDark mb-2">Soothe Emotional Surges</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Build an internal buffer against urgency, deadline panic, and workplace friction.
+                    </p>
+                </div>
+
+                <div class="by-card p-6 bg-white border border-slate-200 shadow-xs hover:border-[#007984] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[#D2F0FF] text-[#007984] flex items-center justify-center mb-4">
+                        <i data-lucide="activity" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-brandDark mb-2">Desk-Friendly & Practical</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Zero special equipment or workout clothes needed. Every micro-reset fits seamlessly into office life.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 5: OUR PRACTICES (8 FULL CARDS) — Background: Warm Peach #FFF3EB   -->
+    <!-- STRICTLY NO TEXT ON TOP OF IMAGES: Clean photos, text underneath!         -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 5: OUR PRACTICES — Background: Brand Primary Teal (#007984)       -->
+    <!-- Matching Children Page's Vibrant Teal Section                             -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 5: OUR PRACTICES — Background: Light Teal Blue (#D2F0FF)          -->
+    <!-- Light, soothing background with 8 pure white practice cards               -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 5: OUR PRACTICES — Background: Light Orange (#FFE8DA)              -->
+    <!-- Soft light orange background with 8 pure white practice cards              -->
+    <!-- ========================================================================= -->
+    <section id="practices" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-16">
+                <div class="section-eyebrow-orange">
+                    <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                    <span>Curriculum & Techniques</span>
+                </div>
+                <h2 class="main-heading">
+                    Our <span style="color: #FD8742;">Practices</span>
+                </h2>
+                <p class="sub-heading">
+                    Simple, repeatable mind-wellness practices designed for desk workers, busy professionals, and leaders.
+                </p>
+            </div>
+
+            <!-- 8 Full Practice Cards with Clean Unobstructed Photos -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 1. Brain Gym and Brain Coordination -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_braingym.webp" alt="Brain Gym and Brain Coordination" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-teal-50 px-2.5 py-0.5 rounded mb-2 border border-teal-200/60">
+                                Attention & Alertness
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Brain Gym & Brain Coordination
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Simple movements and coordination exercises that encourage attention, alertness, and a break from habitual patterns.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 2. Ambidextrous and Neurobic Activities -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_ambidextrous.webp" alt="Ambidextrous and Neurobic Activities" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-0.5 rounded mb-2 border border-orange-200/60">
+                                Neuroplasticity
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Ambidextrous & Neurobic Activities
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Use both hands and challenge familiar routines through engaging brain-training activities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 3. Breathing and Pranayama -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_pranayama.webp" alt="Breathing and Pranayama" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-teal-50 px-2.5 py-0.5 rounded mb-2 border border-teal-200/60">
+                                Nervous System Reset
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Breathing and Pranayama
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Simple breathing practices to support relaxation and present-moment awareness.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 4. Mindfulness and Inner Stillness -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_mindfulness.webp" alt="Mindfulness and Inner Stillness" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-0.5 rounded mb-2 border border-orange-200/60">
+                                Mental Stillness
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Mindfulness & Inner Stillness
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Learn to observe thoughts, sensations, and emotions without immediately reacting to them.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 5. Meditation and Creative Visualization -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_visualization.webp" alt="Meditation and Creative Visualization" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-teal-50 px-2.5 py-0.5 rounded mb-2 border border-teal-200/60">
+                                Focused Attention
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Meditation & Visualization
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Guided practices to settle attention, clarify intentions, and mentally rehearse constructive actions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 6. Emotional Awareness and EFT -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_eft.webp" alt="Emotional Awareness and EFT" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-0.5 rounded mb-2 border border-orange-200/60">
+                                Emotional Balance
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Emotional Awareness & EFT
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                A guided tapping-based self-awareness practice to help participants notice and work with uncomfortable feelings.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 7. Yoga Nidra and Desk Relaxation -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_yoganidra.webp" alt="Yoga Nidra and Desk Relaxation" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-teal-50 px-2.5 py-0.5 rounded mb-2 border border-teal-200/60">
+                                Chair & Workplace
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Yoga Nidra & Desk Relaxation
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Guided relaxation and body-awareness practices that can be adapted to a chair or workplace.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 8. Everyday Awareness Techniques -->
+                <div class="by-card by-card-zoom flex flex-col justify-between bg-white shadow-sm hover:shadow-xl transition-all border border-orange-200/70">
+                    <div>
+                        <div class="h-48 w-full bg-slate-100 overflow-hidden">
+                            <img src="practice_awareness.webp" alt="Everyday Awareness Techniques" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-0.5 rounded mb-2 border border-orange-200/60">
+                                Daily Presence
+                            </span>
+                            <h3 class="text-base font-bold text-brandDark mb-2">
+                                Everyday Awareness Techniques
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Practice mindful pauses during meetings, communication, mobile phone usage, transitions, and challenging situations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-0">
+                        <span class="text-xs font-semibold text-brandTeal hover:text-brandOrange inline-flex items-center gap-1 transition-colors">
+                            Step-by-step Guided →
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 6: WHAT REGULAR PRACTICE CAN BUILD — Background: White #FFFFFF    -->
+    <!-- (Updated from "Measurable Impact" per Rajendra Boddu's Doc)               -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 6: BENEFITS — Background: Light Teal Blue (#D2F0FF)                -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 6: BENEFITS — Exact Signature Teal Blue #007984 Background        -->
+    <!-- Matching kids.html Section 6 ("Outcomes That Matter Beyond Academics")     -->
+    <!-- ========================================================================= -->
+    <section id="benefits" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] text-white border-b border-teal-900/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-4 backdrop-blur-xs">
+                    <span class="w-2 h-2 rounded-full bg-amber-300"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-white">Sustainable Benefits</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    What Regular Practice <span class="text-amber-300">Can Build</span>
+                </h2>
+                <p class="text-sm sm:text-base text-teal-100 mt-3 max-w-2xl mx-auto leading-relaxed">
+                    Participants may gradually develop:
+                </p>
+            </div>
+
+            <!-- 6 Pure White Benefit Cards with Teal Checkmark Badges -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
+                    <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">
+                        Greater awareness of stress triggers and habitual reactions.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
+                    <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">
+                        Improved ability to pause before reacting in challenging situations.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
+                    <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">
+                        Practical tools to reset attention and reduce mental fatigue during work.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
+                    <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">
+                        Simple techniques to support emotional balance and calm.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
+                    <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">
+                        Mindful work habits that protect focus and personal well-being.
+                    </p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-white text-slate-800 flex items-center gap-4 shadow-md border border-teal-100">
+                    <div class="w-9 h-9 rounded-lg bg-[#007984] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">
+                        Healthier boundaries with screens, notifications, and workplace urgency.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Neuroplasticity Box -->
+            <div class="mt-8 p-6 rounded-2xl bg-white/10 border border-white/20 shadow-xs flex items-center gap-4 backdrop-blur-xs">
+                <div class="w-10 h-10 rounded-full bg-white text-[#007984] flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white">Rooted in Neuroplasticity & Habit Formation</h4>
+                    <p class="text-xs text-teal-100 mt-0.5">Brain Yoga trains your brain to break automatic stress responses and replace them with deliberate, conscious choices.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 7: HOW DOES THE PROGRAM WORK? — Background: Warm Peach #FFF3EB    -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 7: HOW DOES THE PROGRAM WORK — Background: Light Orange (#FFE8DA)  -->
+    <!-- ========================================================================= -->
+    <section id="how-it-works" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-12">
+                <div class="section-eyebrow-orange">
+                    <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                    <span>Flexible Delivery</span>
+                </div>
+                <h2 class="main-heading">
+                    How Does the <span style="color: #FD8742;">Program Work?</span>
+                </h2>
+                <p class="sub-heading">
+                    Practical sessions designed for real life, with flexible formats for individuals and corporate teams.
+                </p>
+
+                <!-- Program Chips from document -->
+                <div class="mt-4 flex flex-wrap justify-center gap-3 text-xs font-semibold text-slate-700">
+                    <span class="bg-white px-3.5 py-1.5 rounded-lg border border-orange-200/80 shadow-xs">
+                        📍 Format: Live guided sessions, online or in person
+                    </span>
+                    <span class="bg-white px-3.5 py-1.5 rounded-lg border border-orange-200/80 shadow-xs">
+                        👥 Designed for: Adults, working professionals, entrepreneurs & teams
+                    </span>
+                </div>
+            </div>
+
+            <!-- Corporate Session Showcase Cards - Clean Unobstructed Photos! -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="by-card bg-white border border-orange-200/80 overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="aspect-[16/10] w-full overflow-hidden bg-slate-100">
+                        <img src="workshop_corporate_team.webp" alt="Corporate Brain Yoga Workshop" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 bg-white">
+                        <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-teal-50 px-2.5 py-0.5 rounded mb-2 border border-teal-200/60">
+                            Team Wellness In Action
+                        </span>
+                        <h4 class="text-base sm:text-lg font-bold text-brandDark">Interactive Hands-on Exercises</h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">Energizing breaks that improve focus, reduce fatigue, and boost team morale.</p>
+                    </div>
+                </div>
+
+                <div class="by-card bg-white border border-orange-200/80 overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="aspect-[16/10] w-full overflow-hidden bg-slate-100">
+                        <img src="workshop_corporate_chair.webp" alt="Brain Gym and Desk Stretching" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 bg-white">
+                        <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-orange-50 px-2.5 py-0.5 rounded mb-2 border border-orange-200/60">
+                            Desk-Friendly Adaptability
+                        </span>
+                        <h4 class="text-base sm:text-lg font-bold text-brandDark">Chair & Ergonomic Mind-Breaks</h4>
+                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">No special clothing or gym required — perfectly suited for office environments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Available Formats Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                
+                <div class="by-card p-6 text-center bg-white border border-orange-200/80 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-orange-50 text-brandOrange border border-brandOrange/25 mx-auto flex items-center justify-center mb-3">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark text-base mb-1">Introductory Session</h4>
+                    <p class="text-xs text-slate-500">Perfect to experience the core methods firsthand</p>
+                </div>
+
+                <div class="by-card p-6 text-center bg-white border border-orange-200/80 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-teal-50 text-brandTeal border border-teal-200/60 mx-auto flex items-center justify-center mb-3">
+                        <i data-lucide="target" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark text-base mb-1">Focused Workshop</h4>
+                    <p class="text-xs text-slate-500">Deep-dive on focus, screen habits, or stress</p>
+                </div>
+
+                <div class="by-card p-6 text-center bg-white border border-orange-200/80 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-orange-50 text-brandOrange border border-brandOrange/25 mx-auto flex items-center justify-center mb-3">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark text-base mb-1">Multi-Session Program</h4>
+                    <p class="text-xs text-slate-500">Progressive habit-building over consecutive weeks</p>
+                </div>
+
+                <div class="by-card p-6 text-center bg-white border border-orange-200/80 shadow-xs hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-lg bg-teal-50 text-brandTeal border border-teal-200/60 mx-auto flex items-center justify-center mb-3">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-bold text-brandDark text-base mb-1">Customized Corporate</h4>
+                    <p class="text-xs text-slate-500">Tailored to your organization size and schedule</p>
+                </div>
+
+            </div>
+
+            <!-- Action Button -->
+            <div class="by-card p-8 text-center max-w-2xl mx-auto bg-white border border-orange-200/80 shadow-sm">
+                <p class="text-sm sm:text-base font-semibold text-slate-800 mb-6">
+                    Participants also learn simple activities that they can practice independently at home or during work breaks.
+                </p>
+                <button onclick="openModal('corporateModal')" class="by-btn-primary">
+                    <i data-lucide="users" class="w-4 h-4"></i>
+                    <span>Discuss a Program for Your Team</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 8: CORPORATE BRAIN YOGA WORKSHOPS — Background: White #FFFFFF      -->
+    <!-- (Headline: Bring Brain Yoga to Your Workplace as requested)               -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 8: CORPORATE WORKSHOPS — Background: Warm Orange Gradient         -->
+    <!-- Matching Children Page's #FD8742 / #D36005 Vibrant Accent Section         -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 8: CORPORATE WORKSHOPS — Bright Sunny Orange (#F4A261 ➔ #FD8742)  -->
+    <!-- Matching Children Page's Vibrant, Cheerful Orange (NOT dark brown!)       -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 8: CORPORATE WORKSHOPS — Background: Light Orange (#FFE8DA)       -->
+    <!-- Matching Children Page's Soft Warm Orange (NOT dark orange!)              -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 8: CORPORATE WORKSHOPS — Background: Light Teal Blue (#D2F0FF)     -->
+    <!-- Soft light teal background (NO dark orange!) with crisp white cards        -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 8: CORPORATE WORKSHOPS — Exact Signature Teal Blue #007984         -->
+    <!-- Matching kids.html Section 12 ("Workshop Details") with crisp white cards  -->
+    <!-- ========================================================================= -->
+    <section id="corporate" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] text-white border-b border-teal-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-4 backdrop-blur-xs">
+                    <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-white">Corporate Brain Yoga Workshops</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Bring Brain Yoga to <span class="text-amber-300">Your Workplace</span>
+                </h2>
+                <p class="text-sm sm:text-base text-teal-100 mt-3 max-w-2xl mx-auto leading-relaxed">
+                    Bring Brain Yoga to your startup, IT team, business network, or organization. Our interactive workshops combine engaging brain-training activities with practical techniques that employees can incorporate into their daily lives.
+                </p>
+            </div>
+
+            <!-- 4 Formats: Crisp White Cards on Signature Teal Blue Background -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                
+                <div class="by-card p-6 bg-white text-slate-800 shadow-xl border border-teal-100">
+                    <div class="text-xs font-bold text-[#007984] uppercase tracking-wider mb-2">Express Break</div>
+                    <h3 class="text-lg font-bold text-brandDark mb-2">30 to 45-Minute</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Introductory session designed for team all-hands, energizer breaks, or wellness kickoffs.
+                    </p>
+                </div>
+
+                <div class="by-card p-6 bg-white text-slate-800 shadow-2xl border-2 border-brandOrange relative">
+                    <span class="absolute -top-3 right-4 text-[10px] font-bold uppercase tracking-wider bg-brandOrange text-white px-2.5 py-0.5 rounded-full shadow-xs">Popular</span>
+                    <div class="text-xs font-bold text-brandOrange uppercase tracking-wider mb-2">Interactive</div>
+                    <h3 class="text-lg font-bold text-brandDark mb-2">60 to 90-Minute</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Interactive workshop with live practice, breathing, tapping, and desk-friendly resets.
+                    </p>
+                </div>
+
+                <div class="by-card p-6 bg-white text-slate-800 shadow-xl border border-teal-100">
+                    <div class="text-xs font-bold text-[#007984] uppercase tracking-wider mb-2">Intensive</div>
+                    <h3 class="text-lg font-bold text-brandDark mb-2">Half-Day Workshop</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        In-depth training for leadership offsites, retreats, and high-performance teams.
+                    </p>
+                </div>
+
+                <div class="by-card p-6 bg-white text-slate-800 shadow-xl border border-teal-100">
+                    <div class="text-xs font-bold text-[#007984] uppercase tracking-wider mb-2">Sustained</div>
+                    <h3 class="text-lg font-bold text-brandDark mb-2">Multi-Session Program</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Weekly or monthly structured wellness journey for long-term stress resilience.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Topics Cloud (Clean White Badges) -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-white/10 border border-white/20 mb-10 shadow-sm backdrop-blur-xs">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 text-center">
+                    Workshop Topics May Include:
+                </h4>
+                <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3">
+                    <span class="bg-white text-slate-800 text-xs font-bold px-4 py-2 rounded-lg shadow-xs">Focus and Attention</span>
+                    <span class="bg-white text-slate-800 text-xs font-bold px-4 py-2 rounded-lg shadow-xs">Stress Awareness</span>
+                    <span class="bg-white text-slate-800 text-xs font-bold px-4 py-2 rounded-lg shadow-xs">Emotional Balance</span>
+                    <span class="bg-white text-slate-800 text-xs font-bold px-4 py-2 rounded-lg shadow-xs">Mindful Work Habits</span>
+                    <span class="bg-white text-slate-800 text-xs font-bold px-4 py-2 rounded-lg shadow-xs">Desk-Friendly Movement</span>
+                    <span class="bg-white text-slate-800 text-xs font-bold px-4 py-2 rounded-lg shadow-xs">Digital Detox Micro-Habits</span>
+                </div>
+            </div>
+
+            <!-- Corporate Action CTAs -->
+            <div class="text-center space-y-4">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="openModal('corporateModal')" class="by-btn-primary shadow-xl">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        <span>Request a Corporate Proposal</span>
+                    </button>
+                    <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20we%20want%20to%20schedule%20a%2015-minute%20discussion%20about%20a%20Corporate%20Brain%20Yoga%20Workshop." target="_blank" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-white/15 hover:bg-white/25 text-white font-bold text-sm border border-white/40 shadow-sm transition-all">
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+                        <span>Schedule a 15-Minute Discussion</span>
+                    </a>
+                </div>
+                <p class="text-xs text-teal-100">
+                    Customized proposals delivered within 24 hours. Online and in-person delivery available.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 9: MEET YOUR TRAINER — Background: Warm Peach #FFF3EB             -->
+    <!-- Meet Rajendra Boddu: From IT Professional to Brain Yoga Trainer           -->
+    <!-- Strictly NO TEXT ON TOP OF IMAGE: Clean portrait, credentials list below  -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 9: TRAINER PROFILE — Background: Light Orange (#FFE8DA)            -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 9: TRAINER PROFILE — Background: Light Orange (#FFE8DA)            -->
+    <!-- Meet Rajendra Boddu: From IT Professional to Brain Yoga Trainer           -->
+    <!-- Authentic portrait trainer_rajendra_portrait.jpg with verified credentials   -->
+    <!-- ========================================================================= -->
+    <section id="trainer" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Trainer Photo Column (Clean framed photo) -->
+                <div class="reveal-on-scroll lg:col-span-5 flex flex-col items-center">
+                    <div class="by-card w-full max-w-sm overflow-hidden bg-white border border-orange-200/80 shadow-md">
+                        <div class="aspect-[4/4] bg-slate-100 overflow-hidden">
+                            <img src="trainer_rajendra_portrait.jpg" alt="Rajendra Boddu" class="w-full h-full object-cover object-top" loading="eager" decoding="async">
+                        </div>
+                        <div class="p-6 bg-white text-center">
+                            <h3 class="text-xl font-bold text-brandDark">Rajendra Boddu</h3>
+                            <p class="text-xs font-semibold text-brandTeal mt-1">Founder & Lead Brain Yoga Facilitator</p>
+                            <p class="text-xs text-slate-500 mt-1">Hyderabad, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trainer Bio Column (Exact story from document) -->
+                <div class="reveal-on-scroll lg:col-span-7 space-y-6">
+                    <div class="section-eyebrow-orange">
+                        <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                        <span>Meet Your Trainer</span>
+                    </div>
+
+                    <h2 class="main-heading">
+                        Meet Rajendra Boddu: <br class="hidden sm:inline">
+                        <span style="color: #007984;">From IT Professional to Brain Yoga Trainer</span>
+                    </h2>
+
+                    <!-- Bio Text (Verbatim from document) -->
+                    <div class="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                        <p>
+                            After 15 years in the IT industry with organizations like <strong>TCS and Capgemini</strong>, I understand the demands of deadlines, multitasking, and professional responsibilities.
+                        </p>
+                        <p>
+                            My journey into Brain Yoga and yoga therapy led me to help adults develop practical habits for greater awareness, calmness, and emotional balance.
+                        </p>
+                        <p>
+                            Today, I combine my corporate experience with Brain Yoga practices to make mind-wellness relevant, practical, and accessible.
+                        </p>
+                        <p class="font-semibold text-brandDark bg-white p-4 rounded-xl border-l-4 border-brandTeal shadow-xs">
+                            His objective is simple: help participants experience practical techniques and explore how to apply them in everyday life.
+                        </p>
+                    </div>
+
+                    <!-- Verified Credentials List (All 7 Credentials from Document) -->
+                    <div class="pt-2">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Verified Credentials & Experience:</h4>
+                        <div class="p-4 rounded-xl bg-white border border-orange-200/80 text-xs font-semibold text-slate-800 leading-relaxed shadow-xs flex flex-wrap gap-2">
+                            <span class="bg-teal-50 text-brandTeal px-2.5 py-1 rounded-md border border-teal-200/60">Certified Brain Yoga Trainer</span>
+                            <span class="bg-teal-50 text-brandTeal px-2.5 py-1 rounded-md border border-teal-200/60">Certified Yoga Instructor</span>
+                            <span class="bg-teal-50 text-brandTeal px-2.5 py-1 rounded-md border border-teal-200/60">Certified Yoga Therapist</span>
+                            <span class="bg-orange-50 text-brandOrange px-2.5 py-1 rounded-md border border-orange-200/60">Quantum Speed Reading Mentor</span>
+                            <span class="bg-orange-50 text-brandOrange px-2.5 py-1 rounded-md border border-orange-200/60">Certified Subconscious Mind Trainer</span>
+                            <span class="bg-orange-50 text-brandOrange px-2.5 py-1 rounded-md border border-orange-200/60">Certified Auricular Therapist</span>
+                            <span class="bg-slate-100 text-brandDark px-2.5 py-1 rounded-md font-bold">15 Years in IT (TCS & Capgemini)</span>
+                        </div>
+                    </div>
+
+                    <!-- Direct WhatsApp Contact -->
+                    <div class="pt-2">
+                        <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20would%20like%20to%20connect%20regarding%20Brain%20Yoga%20for%20Busy%20Minds." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-all">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Message Rajendra on WhatsApp (+91 83319 29240)</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 10: WHAT PARTICIPANTS SAY — Background: Clean White #FFFFFF        -->
+    <!-- 6 Verified Authentic Testimonials with Indian Professional Avatars        -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 10: TESTIMONIALS — Background: Light Teal Blue (#D2F0FF)           -->
+    <!-- Soft light teal background with 6 crisp white participant review cards     -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 10: TESTIMONIALS — Exact Signature Teal Blue #007984 Background   -->
+    <!-- Matching kids.html Section 9 ("Transformation Stories") with white cards  -->
+    <!-- ========================================================================= -->
+    <section id="testimonials" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] text-white border-b border-teal-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
+                <div class="inline-flex items-center gap-2 bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-4 backdrop-blur-xs">
+                    <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-white">Real Experiences</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    What <span class="text-amber-300">Participants Say</span>
+                </h2>
+                <p class="text-sm sm:text-base text-teal-100 mt-3 max-w-2xl mx-auto leading-relaxed">
+                    Real experiences from busy professionals who made mind-wellness a daily habit.
+                </p>
+            </div>
+
+            <!-- 6 Testimonial Cards: Crisp White on Signature Teal Blue #007984 -->
+            <div class="stagger-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Uma Maheswari -->
+                <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "The simple breathing techniques and ambidextrous coordination drills helped me break my continuous chain of work fatigue. I feel noticeably lighter and more present with my family in the evenings."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 border border-teal-200 flex-shrink-0">
+                            <img src="testimonial_uma.jpg" alt="Uma Maheswari" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandDark">Uma Maheswari</h4>
+                            <p class="text-[11px] text-slate-500">Senior IT Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Aryan Gupta -->
+                <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "The '10 People. 1 Barking Dog' concept completely shifted how I react to crisis emails. Instead of firing off impulsive responses, I pause, reset, and respond with complete calm."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 border border-teal-200 flex-shrink-0">
+                            <img src="testimonial_aryan.jpg" alt="Aryan Gupta" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandDark">Aryan Gupta</h4>
+                            <p class="text-[11px] text-slate-500">Tech Lead & Architect</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Kavitha Reddy -->
+                <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "We introduced the 60-minute workshop to our corporate team. Employees praised the practical desk stretches and tapping exercises. It was by far our highest-rated wellness session."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 border border-teal-200 flex-shrink-0">
+                            <img src="testimonial_kavitha.jpg" alt="Kavitha Reddy" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandDark">Kavitha Reddy</h4>
+                            <p class="text-[11px] text-slate-500">HR Director, FinTech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Sravani V. -->
+                <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "Bedtime overthinking used to rob me of 2 hours of sleep every night. The Yoga Nidra relaxation routine from Brain Yoga helped me fall asleep naturally within minutes."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 border border-teal-200 flex-shrink-0">
+                            <img src="testimonial_sravani.jpg" alt="Sravani V." class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandDark">Sravani V.</h4>
+                            <p class="text-[11px] text-slate-500">Digital Marketing Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Vinay Kumar -->
+                <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "As an entrepreneur constantly context-switching, Brain Yoga gave me quick 2-minute reset anchors during meetings that keep my decision-making sharp and calm."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 border border-teal-200 flex-shrink-0">
+                            <img src="testimonial_vinay.jpg" alt="Vinay Kumar" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandDark">Vinay Kumar</h4>
+                            <p class="text-[11px] text-slate-500">Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Kiran Shah -->
+                <div class="by-card p-6 bg-white text-slate-800 border border-teal-100 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-700 leading-relaxed italic mb-4">
+                            "What I appreciate most is that Rajendra ji explains the 'why' behind each technique without any mysticism. It is 100% scientific, sensible, and deeply effective."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full overflow-hidden bg-slate-100 border border-teal-200 flex-shrink-0">
+                            <img src="testimonial_kiran.jpg" alt="Kiran Shah" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brandDark">Kiran Shah</h4>
+                            <p class="text-[11px] text-slate-500">Chartered Accountant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 11: FREQUENTLY ASKED QUESTIONS — Background: Warm Peach #FFF3EB    -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 11: FAQ — Background: Light Orange (#FFE8DA)                       -->
+    <!-- Soft light orange background with clean white accordion cards              -->
+    <!-- ========================================================================= -->
+    <section id="faq" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#FFE8DA] border-b border-orange-200/60">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="reveal-on-scroll text-center max-w-3xl mx-auto mb-14">
+                <div class="section-eyebrow-orange">
+                    <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                    <span>Got Questions?</span>
+                </div>
+                <h2 class="main-heading">
+                    Frequently Asked <span style="color: #FD8742;">Questions</span>
+                </h2>
+                <p class="sub-heading">
+                    Everything you need to know about starting your Brain Yoga practice.
+                </p>
+            </div>
+
+            <!-- Accordion List: Clean White Cards on Light Orange -->
+            <div class="space-y-4">
+                
+                <div class="rounded-2xl border border-orange-200/80 bg-white shadow-xs overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-brandDark text-sm sm:text-base hover:text-brandOrange transition-colors" aria-expanded="false">
+                        <span>Do I need prior yoga or meditation experience?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Not at all. Brain Yoga for Busy Minds is specifically designed for beginners, desk workers, and people with active, restless minds. There are no complicated poses, flexibility requirements, or religious rituals.
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-orange-200/80 bg-white shadow-xs overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-brandDark text-sm sm:text-base hover:text-brandOrange transition-colors" aria-expanded="false">
+                        <span>Can these practices really be done in an office setting?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Yes! All practices are desk-friendly and chair-based. You do not need to change clothes, roll out a yoga mat, or lie on the floor. Everything can be practiced comfortably sitting in your office chair or standing at your desk.
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-orange-200/80 bg-white shadow-xs overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-brandDark text-sm sm:text-base hover:text-brandOrange transition-colors" aria-expanded="false">
+                        <span>How much time does daily practice take?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Just 5 to 10 minutes a day is sufficient to experience meaningful shifts in your nervous system. In fact, many of the micro-pause techniques take only 60 to 90 seconds between meetings or before opening your email inbox.
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-orange-200/80 bg-white shadow-xs overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-brandDark text-sm sm:text-base hover:text-brandOrange transition-colors" aria-expanded="false">
+                        <span>How do corporate workshop bookings work?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        We offer customized corporate workshops ranging from 45-minute energizers to full-day leadership offsites. We can deliver sessions virtually over Zoom/Teams or in-person at your offices across India. Customized proposals are provided within 24 hours.
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-orange-200/80 bg-white shadow-xs overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-brandDark text-sm sm:text-base hover:text-brandOrange transition-colors" aria-expanded="false">
+                        <span>Is this suitable for someone struggling with ADHD or intense brain chatter?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Absolutely. Brain Yoga incorporates cross-body coordination, bilateral stimulation, and physical anchoring specifically designed for minds that find traditional silent meditation difficult or frustrating.
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border border-orange-200/80 bg-white shadow-xs overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-brandDark text-sm sm:text-base hover:text-brandOrange transition-colors" aria-expanded="false">
+                        <span>How do I get started with a free session?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Simply click the "Book a FREE Introductory Session" button on this page or send a message directly on WhatsApp to +91 83319 29240. Our team will share the schedule and invite link.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 12: FINAL CALL TO ACTION — Background: Deep Teal Gradient         -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 12: FINAL CALL TO ACTION — Background: Light Teal Blue (#D2F0FF)  -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 12: FINAL CALL TO ACTION — Background: Light Teal Blue (#D2F0FF)  -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 12: FINAL CALL TO ACTION — Exact Signature Teal Blue #007984       -->
+    <!-- ========================================================================= -->
+    <section id="cta" class="scroll-mt-24 lg:scroll-mt-28 py-16 sm:py-24 bg-[#007984] border-b border-teal-900/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="by-card p-8 sm:p-14 text-center bg-white shadow-2xl border border-teal-200 space-y-6">
+                
+                <div class="inline-flex items-center gap-2 bg-[#FFE8DA] px-4 py-1.5 rounded-full border border-orange-200/80 shadow-xs">
+                    <span class="w-2 h-2 rounded-full bg-brandOrange"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brandOrange">Begin Your Practice</span>
+                </div>
+
+                <h2 class="main-heading">
+                    Give Your Mind a <span style="color: #007984;">Practical Pause.</span>
+                </h2>
+
+                <p class="sub-heading">
+                    Explore how Brain Yoga for Busy Minds can support your personal wellness or become part of your team's wellness initiative.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="openModal('individualModal')" class="by-btn-primary">
+                        <i data-lucide="calendar" class="w-5 h-5"></i>
+                        <span>Book a FREE Introductory Session</span>
+                    </button>
+
+                    <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20am%20interested%20in%20Brain%20Yoga%20for%20Busy%20Minds.%20Please%20share%20details." target="_blank" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-all">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        <span>Enquire on WhatsApp</span>
+                    </a>
+
+                    <button onclick="openModal('corporateModal')" class="by-btn-secondary">
+                        <i data-lucide="building-2" class="w-5 h-5"></i>
+                        <span>Request a Corporate Workshop</span>
+                    </button>
+                </div>
+
+                <p class="text-xs text-slate-500 pt-2">
+                    Direct WhatsApp Contact: <a href="https://wa.me/918331929240" class="underline font-bold text-brandTeal">+91 83319 29240</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SECTION 13: FOOTER — Background: Deep Slate #111827                        -->
+    <!-- With Official Logo, Links, Disclaimer, Contact & WhatsApp Pulse Button   -->
+    <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+    <!-- SECTION 13: COMPREHENSIVE WHITE FOOTER (bg-white)                         -->
+    <!-- All Section Links, Social Links (Instagram & Facebook), WhatsApp & Rights  -->
+    <!-- ========================================================================= -->
+    <footer id="footer" class="bg-white border-t border-slate-200 text-slate-600 text-xs py-14 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- 4-Column Structured Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-slate-200">
+                
+                <!-- Col 1: Brand Info & Social Links (lg:col-span-4) -->
+                <div class="lg:col-span-4 space-y-4">
+                    <a href="https://brainyogaacademy.com/brain-yoga-for-busy-minds/" style="display: inline-flex !important; align-items: center !important; gap: 8px !important;">
+                        <img decoding="async" src="https://brainyogaacademy.com/wp-content/uploads/2026/11/official_logo.png" alt="Brain Yoga Academy" style="height: 42px !important; max-height: 42px !important; width: auto !important; max-width: 230px !important; object-fit: contain !important; display: inline-block !important;">
+                    </a>
+                    <p class="text-xs text-slate-600 leading-relaxed max-w-sm">
+                        Practical Mind-Wellness & Neuro-Movement for Adults, Working Professionals, and Corporate Organizations. Founded by Rajendra Boddu.
+                    </p>
+                    
+                    <!-- Direct WhatsApp Connect Banner -->
+                    <div class="pt-1">
+                        <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20want%20to%20know%20more%20about%20Brain%20Yoga%20for%20Busy%20Minds." target="_blank" class="inline-flex items-center gap-2.5 px-3.5 py-2 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 font-bold text-xs transition-colors shadow-2xs">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                            <span>WhatsApp: +91 83319 29240</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Icons (Instagram, Facebook, Phone, Email) -->
+                    <div class="pt-1 flex items-center gap-3">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/brain_yoga_academy?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 hover:text-white text-slate-700 flex items-center justify-center transition-all shadow-xs" aria-label="Brain Yoga Academy Instagram">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/brainyogaacademy" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#1877F2] hover:text-white text-slate-700 flex items-center justify-center transition-all shadow-xs" aria-label="Brain Yoga Academy Facebook">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+
+                        <!-- Phone Direct -->
+                        <a href="tel:+918331929240" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#007984] hover:text-white text-slate-700 flex items-center justify-center transition-all shadow-xs" aria-label="Call Rajendra Boddu">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                        </a>
+
+                        <!-- Email Direct -->
+                        <a href="mailto:rajendraboddu@gmail.com" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-[#FD8742] hover:text-white text-slate-700 flex items-center justify-center transition-all shadow-xs" aria-label="Email Rajendra Boddu">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Program Navigation (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brandDark">
+                        Program Sections
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li>
+                            <a href="#challenges" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                                <span>Everyday Reality Check</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#shift" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>
+                                <span>The Shift (1 Barking Dog)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                                <span>What is Brain Yoga?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#practices" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>
+                                <span>Our 8 Practices & Techniques</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#benefits" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                                <span>What Regular Practice Builds</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#how-it-works" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>
+                                <span>How the Program Works</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Workshops & About (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brandDark">
+                        Workshops & Trainer
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li>
+                            <a href="#corporate" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                                <span>Corporate Workshops</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#trainer" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>
+                                <span>Meet Rajendra Boddu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandTeal"></span>
+                                <span>Participant Experiences</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="text-slate-600 hover:text-brandTeal transition-colors flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>
+                                <span>Frequently Asked Questions</span>
+                            </a>
+                        </li>
+                        <li class="pt-2">
+                            <a href="kids.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#FFE8DA] text-brandOrange font-bold text-[11px] border border-orange-200/80 hover:bg-brandOrange hover:text-white transition-all shadow-2xs">
+                                <span>🧒 Brain Yoga for Children</span>
+                                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Quick Contact Details (lg:col-span-2) -->
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brandDark">
+                        Contact Details
+                    </h4>
+                    <div class="space-y-2.5 text-xs text-slate-600">
+                        <div>
+                            <p class="font-bold text-slate-800">WhatsApp / Call:</p>
+                            <a href="https://wa.me/918331929240" target="_blank" class="text-brandTeal hover:underline font-semibold block mt-0.5">
+                                +91 83319 29240
+                            </a>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800">Email:</p>
+                            <a href="mailto:rajendraboddu@gmail.com" class="text-brandTeal hover:underline block mt-0.5 truncate">
+                                rajendraboddu@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800">Location:</p>
+                            <p class="text-slate-600 mt-0.5 leading-relaxed">
+                                Hyderabad, India<br>
+                                <span class="text-[11px] text-slate-500">(Online & On-site across India)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-slate-500">
+                <div>
+                    &copy; 2026 <strong>Brain Yoga Academy</strong>. All Rights Reserved.
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-4 text-[11px]">
+                    <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20have%20an%20enquiry." target="_blank" class="hover:text-brandTeal transition-colors">Contact Support</a>
+                    <span>•</span>
+                    <a href="#about" class="hover:text-brandTeal transition-colors">Program Philosophy</a>
+                    <span>•</span>
+                    <a href="kids.html" class="hover:text-brandTeal transition-colors">Children's Academy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON (Bottom-Right, Pulse Animation)                  -->
+    <!-- ========================================================================= -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/918331929240?text=Hello%20Rajendra%20ji%2C%20I%20have%20an%20enquiry%20regarding%20Brain%20Yoga%20for%20Busy%20Minds." target="_blank" rel="noopener noreferrer" class="whatsapp-pulse-btn w-14 h-14 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center text-white shadow-2xl transition-all" aria-label="Chat with Rajendra Boddu on WhatsApp">
+            <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+        </a>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 1: INDIVIDUAL SESSION BOOKING MODAL                                 -->
+    <!-- ========================================================================= -->
+    <div id="individualModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('individualModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2.5 py-1 rounded-md">
+                    Complimentary Session
+                </span>
+                <h3 class="text-xl font-bold text-brandDark mt-2">Book a FREE Session</h3>
+                <p class="text-xs text-slate-500 mt-1">Experience Brain Yoga for Busy Minds firsthand.</p>
+            </div>
+            <form onsubmit="handleSessionSubmit(event)" class="space-y-4 text-left">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
+                    <input type="text" id="sessionName" required placeholder="e.g. Priya Sharma" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp / Phone Number *</label>
+                    <input type="tel" id="sessionPhone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Profession / Role</label>
+                    <input type="text" id="sessionRole" placeholder="e.g. Software Engineer / Entrepreneur" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Preferred Mode</label>
+                    <select id="sessionMode" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                        <option value="Online (Zoom / Google Meet)">Online (Zoom / Google Meet)</option>
+                        <option value="In-Person (Hyderabad)">In-Person (Hyderabad)</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full by-btn-primary !py-3 !text-sm mt-2">
+                    <span>Confirm Booking on WhatsApp</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 2: CORPORATE WORKSHOP PROPOSAL MODAL                                -->
+    <!-- ========================================================================= -->
+    <div id="corporateModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('corporateModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1 rounded-lg hover:bg-slate-100 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-brandOrange bg-brandPeachLight px-2.5 py-1 rounded-md">
+                    Corporate Wellness
+                </span>
+                <h3 class="text-xl font-bold text-brandDark mt-2">Request Corporate Proposal</h3>
+                <p class="text-xs text-slate-500 mt-1">Customized wellness workshops for IT teams and organizations.</p>
+            </div>
+            <form onsubmit="handleCorporateSubmit(event)" class="space-y-3.5 text-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Contact Person *</label>
+                        <input type="text" id="corpName" required placeholder="e.g. Ramesh V" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Company / Organization *</label>
+                        <input type="text" id="corpCompany" required placeholder="e.g. Infosys / Tech Mahindra" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Expected Team Size</label>
+                        <select id="corpSize" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                            <option value="10 - 30 participants">10 - 30 participants</option>
+                            <option value="30 - 100 participants">30 - 100 participants</option>
+                            <option value="100+ participants">100+ participants</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Preferred Format</label>
+                        <select id="corpFormat" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                            <option value="60-90 Min Interactive Workshop">60-90 Min Workshop</option>
+                            <option value="30-45 Min Recharge Break">30-45 Min Recharge Break</option>
+                            <option value="Half-Day Intensive">Half-Day Intensive</option>
+                            <option value="Multi-Week Program">Multi-Week Program</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp / Phone Number *</label>
+                    <input type="tel" id="corpPhone" required placeholder="+91 98765 43210" class="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandTeal">
+                </div>
+                <button type="submit" class="w-full by-btn-teal !py-3 !text-sm mt-2">
+                    <span>Send Enquiry to Rajendra Boddu</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL 3: VIDEO MODAL (Sample Video Preview as requested in doc)            -->
+    <!-- ========================================================================= -->
+    <div id="videoModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-black rounded-2xl max-w-2xl w-full p-4 relative shadow-2xl overflow-hidden border border-slate-800 animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('videoModal')" class="absolute top-4 right-4 z-20 text-white hover:text-slate-300 bg-black/60 p-2 rounded-full transition-colors" aria-label="Close video player">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-900 flex items-center justify-center">
+                <video id="introVideoPlayer" controls class="w-full h-full object-cover">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="p-3 text-center text-xs text-slate-400">
+                Sample preview of Brain Yoga techniques • Original video will be updated shortly
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Drawer Control
+        const menuBtn = document.getElementById('mobileMenuToggle');
+        const drawer = document.getElementById('mobileDrawerMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            drawer.classList.toggle('hidden');
+        });
+
+        function closeMobileMenu() {
+            if (drawer) {
+                drawer.classList.add('hidden');
+            }
+        }
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                closeMobileMenu();
+            });
+        });
+
+        // Modal Controls
+        function openModal(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            }
+        }
+
+        function closeModal(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                if (id === 'videoModal') {
+                    const vid = document.getElementById('introVideoPlayer');
+                    if (vid) vid.pause();
+                }
+            }
+        }
+
+        function openVideoModal() {
+            openModal('videoModal');
+            const vid = document.getElementById('introVideoPlayer');
+            if (vid) {
+                vid.currentTime = 0;
+                vid.play().catch(e => console.log('Autoplay handled'));
+            }
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-backdrop')) {
+                e.target.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                const vid = document.getElementById('introVideoPlayer');
+                if (vid) vid.pause();
+            }
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                ['individualModal', 'corporateModal', 'videoModal'].forEach(id => closeModal(id));
+            }
+        });
+
+        // FAQ Toggle Logic
+        function toggleFaq(btn) {
+            const parent = btn.parentElement;
+            const answer = parent.querySelector('.faq-answer');
+            const chevron = btn.querySelector('.faq-chevron');
+            
+            const isHidden = answer.classList.contains('hidden');
+            document.querySelectorAll('.faq-answer').forEach(ans => ans.classList.add('hidden'));
+            document.querySelectorAll('.faq-chevron').forEach(chev => chev.classList.remove('rotate-180'));
+
+            if (isHidden) {
+                answer.classList.remove('hidden');
+                chevron.classList.add('rotate-180');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const answers = document.querySelectorAll('.faq-answer');
+            answers.forEach((ans, idx) => {
+                if (idx !== 0) ans.classList.add('hidden');
+            });
+            const firstChevron = document.querySelector('.faq-chevron');
+            if (firstChevron) firstChevron.classList.add('rotate-180');
+        });
+
+        
+        // =========================================================================
+        // SILKY SMOOTH SCROLL REVEAL OBSERVER (Native IntersectionObserver)
+        // =========================================================================
+        (function() {
+            if ('IntersectionObserver' in window) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px 0px -40px 0px',
+                    threshold: 0.08
+                };
+
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-revealed');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe all elements targeted for reveal
+                document.querySelectorAll('.reveal-on-scroll, .stagger-grid').forEach(el => {
+                    revealObserver.observe(el);
+                });
+            } else {
+                // Graceful fallback for legacy browsers: reveal everything immediately
+                document.querySelectorAll('.reveal-on-scroll, .stagger-grid').forEach(el => {
+                    el.classList.add('is-revealed');
+                });
+            }
+        })();
+
+        // WhatsApp Form Handlers
+        function handleSessionSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('sessionName').value;
+            const phone = document.getElementById('sessionPhone').value;
+            const role = document.getElementById('sessionRole').value || 'Not specified';
+            const mode = document.getElementById('sessionMode').value;
+
+            const text = `Hello Rajendra ji, I want to book a FREE Introductory Session for Brain Yoga for Busy Minds.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Profession:* ${encodeURIComponent(role)}%0A*Preferred Mode:* ${encodeURIComponent(mode)}`;
+            window.open(`https://wa.me/918331929240?text=${text}`, '_blank');
+            closeModal('individualModal');
+        }
+
+        function handleCorporateSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('corpName').value;
+            const company = document.getElementById('corpCompany').value;
+            const size = document.getElementById('corpSize').value;
+            const format = document.getElementById('corpFormat').value;
+            const phone = document.getElementById('corpPhone').value;
+
+            const text = `Hello Rajendra ji, we would like to enquire about a Corporate Brain Yoga Workshop for our team.%0A%0A*Contact Name:* ${encodeURIComponent(name)}%0A*Company:* ${encodeURIComponent(company)}%0A*Team Size:* ${encodeURIComponent(size)}%0A*Format:* ${encodeURIComponent(format)}%0A*Phone:* ${encodeURIComponent(phone)}`;
+            window.open(`https://wa.me/918331929240?text=${text}`, '_blank');
+            closeModal('corporateModal');
+        }
+    </script>
+
+<script>
+window.addEventListener('load', () => {
+    // Temporarily hide sections one by one to find which one causes body width to be 500px
+    const children = Array.from(document.body.children);
+    for (const ch of children) {
+        if (ch.tagName === 'SCRIPT' || ch.tagName === 'STYLE') continue;
+        const prevDisplay = ch.style.display;
+        ch.style.display = 'none';
+        const w = document.body.offsetWidth;
+        ch.style.display = prevDisplay;
+        console.log('HIDE ' + ch.tagName + (ch.id ? '#'+ch.id : '') + ' => body width becomes ' + w);
+    }
+});
+</script>
+
+</body>
+</html>

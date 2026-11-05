@@ -1,0 +1,528 @@
+[
+  {
+    "id": "52259ba",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "padding": {
+        "unit": "px",
+        "top": "20",
+        "right": "120",
+        "bottom": "20",
+        "left": "120",
+        "isLinked": false
+      },
+      "hide_tablet": "hidden-tablet",
+      "hide_mobile": "hidden-mobile",
+      "background_background": "classic",
+      "background_color": "#02010100",
+      "z_index": 1
+    },
+    "elements": [
+      {
+        "id": "3debe25",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "1876c47",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 35,
+                "sizes": []
+              },
+              "flex_justify_content": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "_flex_align_self": "center"
+            },
+            "elements": [
+              {
+                "id": "accc0c6",
+                "elType": "widget",
+                "settings": {
+                  "image": {
+                    "id": 78,
+                    "url": "https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1.png"
+                  },
+                  "link_to": "custom",
+                  "link": {
+                    "url": "https://brainyogaacademy.com/",
+                    "is_external": "",
+                    "nofollow": "",
+                    "custom_attributes": ""
+                  }
+                },
+                "elements": [],
+                "widgetType": "image",
+                "htmlCache": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://brainyogaacademy.com/\" class=\"elementor-clickable\">\n\t\t\t\t\t\t\t<img width=\"1024\" height=\"180\" src=\"https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-1024x180.png\" class=\"attachment-large size-large wp-image-78\" alt=\"\" srcset=\"https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-1024x180.png 1024w, https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-300x53.png 300w, https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-768x135.png 768w, https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1.png 1136w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "49cd7f0",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "_flex_align_self": "center",
+              "width": {
+                "unit": "%",
+                "size": 70,
+                "sizes": []
+              },
+              "border_border": "none",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_color": "#928787",
+              "border_radius": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              }
+            },
+            "elements": [
+              {
+                "id": "0d80f0c",
+                "elType": "widget",
+                "settings": {
+                  "menu_name": "Menu",
+                  "menu": "primary",
+                  "menu_typography_typography": "custom",
+                  "menu_typography_font_family": "Poppins",
+                  "menu_typography_font_size": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "menu_typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 32,
+                    "sizes": []
+                  },
+                  "menu_typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "menu_typography_font_weight": "500",
+                  "color_menu_item_hover": "#FF9038",
+                  "pointer_color_menu_item_hover": "#FF9038",
+                  "color_menu_item_active": "#0F6E8C",
+                  "pointer_color_menu_item_active": "#0F6E8C",
+                  "padding_horizontal_menu_item": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "pointer": "text",
+                  "color_menu_item": "#4B4949",
+                  "_padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "20",
+                    "bottom": "0",
+                    "left": "20",
+                    "isLinked": false
+                  },
+                  "_border_border": "solid",
+                  "_border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "1",
+                    "bottom": "1",
+                    "left": "1",
+                    "isLinked": true
+                  },
+                  "_border_color": "#9C9595",
+                  "_border_radius": {
+                    "unit": "px",
+                    "top": "16",
+                    "right": "16",
+                    "bottom": "16",
+                    "left": "16",
+                    "isLinked": true
+                  }
+                },
+                "elements": [],
+                "widgetType": "nav-menu",
+                "htmlCache": "\t\t\t\t\t\t<nav aria-label=\"Menu\" class=\"elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-grow\">\n\t\t\t\t<ul id=\"menu-1-0d80f0c\" class=\"elementor-nav-menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1113\"><a href=\"https://brainyogaacademy.com/\" class=\"elementor-item menu-link\">Home</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-313\"><a href=\"https://brainyogaacademy.com/#about\" class=\"elementor-item elementor-item-anchor menu-link\">About</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-314\"><a href=\"https://brainyogaacademy.com/#workshop\" class=\"elementor-item elementor-item-anchor menu-link\">Workshop</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-315\"><a href=\"https://brainyogaacademy.com/#testimonial\" class=\"elementor-item elementor-item-anchor menu-link\">Testimonial</a></li>\n</ul>\t\t\t</nav>\n\t\t\t\t\t<div class=\"elementor-menu-toggle elementor-clickable\" role=\"button\" tabindex=\"0\" aria-label=\"Menu Toggle\" aria-expanded=\"false\">\n\t\t\t<svg aria-hidden=\"true\" role=\"presentation\" class=\"elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z\"></path></svg><svg aria-hidden=\"true\" role=\"presentation\" class=\"elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z\"></path></svg>\t\t</div>\n\t\t\t\t\t<nav class=\"elementor-nav-menu--dropdown elementor-nav-menu__container\" aria-hidden=\"true\">\n\t\t\t\t<ul id=\"menu-2-0d80f0c\" class=\"elementor-nav-menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1113\"><a href=\"https://brainyogaacademy.com/\" class=\"elementor-item menu-link\" tabindex=\"-1\">Home</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-313\"><a href=\"https://brainyogaacademy.com/#about\" class=\"elementor-item elementor-item-anchor menu-link\" tabindex=\"-1\">About</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-314\"><a href=\"https://brainyogaacademy.com/#workshop\" class=\"elementor-item elementor-item-anchor menu-link\" tabindex=\"-1\">Workshop</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-315\"><a href=\"https://brainyogaacademy.com/#testimonial\" class=\"elementor-item elementor-item-anchor menu-link\" tabindex=\"-1\">Testimonial</a></li>\n</ul>\t\t\t</nav>\n\t\t\t\t"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "3a3204c",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 35,
+                "sizes": []
+              },
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "_flex_align_self": "center"
+            },
+            "elements": [
+              {
+                "id": "42f85a7",
+                "elType": "widget",
+                "settings": {
+                  "text": "Reserve My FREE Seat",
+                  "selected_icon": {
+                    "value": "fas fa-arrow-right",
+                    "library": "fa-solid"
+                  },
+                  "icon_align": "row-reverse",
+                  "background_color": "#0F6E8C",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "10",
+                    "bottom": "10",
+                    "left": "10",
+                    "isLinked": true
+                  },
+                  "_flex_align_self": "flex-end",
+                  "__dynamic__": {
+                    "link": "[elementor-tag id=\"8e3e164\" name=\"popup\" settings=\"%7B%22popup%22%3A%22484%22%7D\"]"
+                  }
+                },
+                "elements": [],
+                "widgetType": "button",
+                "htmlCache": "\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjQ4NCIsInRvZ2dsZSI6ZmFsc2V9\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t<span class=\"elementor-button-icon\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-arrow-right\" viewBox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z\"></path></svg>\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Reserve My FREE Seat</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t"
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "b7ec46a",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "padding": {
+        "unit": "px",
+        "top": "20",
+        "right": "120",
+        "bottom": "20",
+        "left": "120",
+        "isLinked": false
+      },
+      "padding_tablet": {
+        "unit": "px",
+        "top": "10",
+        "right": "20",
+        "bottom": "10",
+        "left": "20",
+        "isLinked": false
+      },
+      "hide_desktop": "hidden-desktop",
+      "sticky": "top",
+      "background_background": "classic",
+      "background_color": "#02010182",
+      "padding_mobile": {
+        "unit": "px",
+        "top": "10",
+        "right": "10",
+        "bottom": "10",
+        "left": "10",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "ec7710c",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_justify_content": "space-between",
+          "flex_gap_mobile": {
+            "column": "0",
+            "row": "0",
+            "isLinked": true,
+            "unit": "px",
+            "size": 0
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "057d214",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 60,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 30,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 35,
+                "sizes": []
+              },
+              "flex_justify_content": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "_flex_align_self": "center"
+            },
+            "elements": [
+              {
+                "id": "bbb6f2d",
+                "elType": "widget",
+                "settings": {
+                  "image": {
+                    "id": "78",
+                    "url": "https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1.png"
+                  },
+                  "link_to": "custom",
+                  "link": {
+                    "url": "https://brainyogaacademy.com/",
+                    "is_external": "",
+                    "nofollow": "",
+                    "custom_attributes": ""
+                  },
+                  "width_mobile": {
+                    "unit": "%",
+                    "size": 100,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "image",
+                "htmlCache": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://brainyogaacademy.com/\" class=\"elementor-clickable\">\n\t\t\t\t\t\t\t<img width=\"1024\" height=\"180\" src=\"https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-1024x180.png\" class=\"attachment-large size-large wp-image-78\" alt=\"\" srcset=\"https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-1024x180.png 1024w, https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-300x53.png 300w, https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1-768x135.png 768w, https://brainyogaacademy.com/wp-content/uploads/2026/07/Frame-262-1.png 1136w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" />\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "14df0db",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 64,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 30,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 51,
+                "sizes": []
+              },
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "_flex_align_self": "center"
+            },
+            "elements": [
+              {
+                "id": "c91dd2b",
+                "elType": "widget",
+                "settings": {
+                  "text": "Reserve My Free Seat",
+                  "selected_icon": {
+                    "value": "fas fa-arrow-right",
+                    "library": "fa-solid"
+                  },
+                  "icon_align": "row-reverse",
+                  "background_color": "#0F6E8C",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "10",
+                    "bottom": "10",
+                    "left": "10",
+                    "isLinked": true
+                  },
+                  "_flex_align_self": "flex-end",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Inter",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 14,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 8,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "500",
+                  "__dynamic__": {
+                    "link": "[elementor-tag id=\"b75c322\" name=\"popup\" settings=\"%7B%22popup%22%3A%22484%22%7D\"]"
+                  }
+                },
+                "elements": [],
+                "widgetType": "button",
+                "htmlCache": "\t\t\t\t\t\t\t\t<a class=\"elementor-button elementor-button-link elementor-size-sm\" href=\"#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjQ4NCIsInRvZ2dsZSI6ZmFsc2V9\">\n\t\t\t\t\t\t<span class=\"elementor-button-content-wrapper\">\n\t\t\t\t\t\t<span class=\"elementor-button-icon\">\n\t\t\t\t<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-arrow-right\" viewBox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z\"></path></svg>\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<span class=\"elementor-button-text\">Reserve My Free Seat</span>\n\t\t\t\t\t</span>\n\t\t\t\t\t</a>\n\t\t\t\t\t\t"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "576737a",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width_tablet": {
+                "unit": "%",
+                "size": 10,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 11,
+                "sizes": []
+              },
+              "flex_align_items": "center",
+              "flex_align_items_tablet": "flex-end",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "_flex_align_self": "center"
+            },
+            "elements": [
+              {
+                "id": "a846a79",
+                "elType": "widget",
+                "settings": {
+                  "menu_name": "Menu",
+                  "menu": "primary",
+                  "full_width": "stretch",
+                  "menu_typography_typography": "custom",
+                  "menu_typography_font_family": "Poppins",
+                  "menu_typography_font_size": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "menu_typography_font_size_tablet": {
+                    "unit": "px",
+                    "size": 32,
+                    "sizes": []
+                  },
+                  "menu_typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "menu_typography_font_weight": "500",
+                  "color_menu_item_hover": "#FF9038",
+                  "pointer_color_menu_item_hover": "#FF9038",
+                  "color_menu_item_active": "#0F6E8C",
+                  "pointer_color_menu_item_active": "#0F6E8C",
+                  "padding_horizontal_menu_item": {
+                    "unit": "px",
+                    "size": 8,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "nav-menu",
+                "htmlCache": "\t\t\t\t\t\t<nav aria-label=\"Menu\" class=\"elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade\">\n\t\t\t\t<ul id=\"menu-1-a846a79\" class=\"elementor-nav-menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1113\"><a href=\"https://brainyogaacademy.com/\" class=\"elementor-item menu-link\">Home</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-313\"><a href=\"https://brainyogaacademy.com/#about\" class=\"elementor-item elementor-item-anchor menu-link\">About</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-314\"><a href=\"https://brainyogaacademy.com/#workshop\" class=\"elementor-item elementor-item-anchor menu-link\">Workshop</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-315\"><a href=\"https://brainyogaacademy.com/#testimonial\" class=\"elementor-item elementor-item-anchor menu-link\">Testimonial</a></li>\n</ul>\t\t\t</nav>\n\t\t\t\t\t<div class=\"elementor-menu-toggle elementor-clickable\" role=\"button\" tabindex=\"0\" aria-label=\"Menu Toggle\" aria-expanded=\"false\">\n\t\t\t<svg aria-hidden=\"true\" role=\"presentation\" class=\"elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z\"></path></svg><svg aria-hidden=\"true\" role=\"presentation\" class=\"elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z\"></path></svg>\t\t</div>\n\t\t\t\t\t<nav class=\"elementor-nav-menu--dropdown elementor-nav-menu__container\" aria-hidden=\"true\">\n\t\t\t\t<ul id=\"menu-2-a846a79\" class=\"elementor-nav-menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1113\"><a href=\"https://brainyogaacademy.com/\" class=\"elementor-item menu-link\" tabindex=\"-1\">Home</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-313\"><a href=\"https://brainyogaacademy.com/#about\" class=\"elementor-item elementor-item-anchor menu-link\" tabindex=\"-1\">About</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-314\"><a href=\"https://brainyogaacademy.com/#workshop\" class=\"elementor-item elementor-item-anchor menu-link\" tabindex=\"-1\">Workshop</a></li>\n<li class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-315\"><a href=\"https://brainyogaacademy.com/#testimonial\" class=\"elementor-item elementor-item-anchor menu-link\" tabindex=\"-1\">Testimonial</a></li>\n</ul>\t\t\t</nav>\n\t\t\t\t"
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]
