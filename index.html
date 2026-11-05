@@ -59,10 +59,6 @@
             object-fit: contain !important;
             display: block !important;
         }
-            max-width: 200px !important;
-            object-fit: contain !important;
-            display: block !important;
-        }
         @media (max-width: 640px) {
             .by-brand-logo {
                 height: 25px !important;
@@ -256,6 +252,20 @@
         }
         .whatsapp-pulse-btn {
             animation: pulseWa 3.2s infinite ease-in-out;
+        }
+
+        /* Completely suppress theme scroll-to-top and external floating widgets under WhatsApp */
+        #ast-scroll-top,
+        .ast-scroll-top-icon,
+        .ast-scroll-to-top-right,
+        #ht-ctc-chat,
+        .ht-ctc,
+        .ht_ctc_chat_style {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
         }
     
         /* ========================================================================= */
@@ -494,10 +504,6 @@
             object-fit: contain !important;
             display: block !important;
         }
-            max-width: 200px !important;
-            object-fit: contain !important;
-            display: block !important;
-        }
         @media (max-width: 640px) {
             .by-brand-logo {
                 height: 25px !important;
@@ -691,6 +697,20 @@
         }
         .whatsapp-pulse-btn {
             animation: pulseWa 3.2s infinite ease-in-out;
+        }
+
+        /* Completely suppress theme scroll-to-top and external floating widgets under WhatsApp */
+        #ast-scroll-top,
+        .ast-scroll-top-icon,
+        .ast-scroll-to-top-right,
+        #ht-ctc-chat,
+        .ht-ctc,
+        .ht_ctc_chat_style {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
         }
     
         /* ========================================================================= */
@@ -3004,6 +3024,28 @@
         } else {
             setTimeout(prefetchKids, 1500);
         }
+    })();
+    </script>
+
+    <!-- Clean up theme scroll-to-top and external widgets interfering with floating WhatsApp -->
+    <script>
+    (function() {
+        function removeObtrusiveFloaters() {
+            var selectors = ['#ast-scroll-top', '.ast-scroll-top-icon', '#ht-ctc-chat', '.ht-ctc'];
+            selectors.forEach(function(sel) {
+                document.querySelectorAll(sel).forEach(function(el) {
+                    if (el) el.remove();
+                });
+            });
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', removeObtrusiveFloaters);
+        } else {
+            removeObtrusiveFloaters();
+        }
+        window.addEventListener('load', removeObtrusiveFloaters);
+        setTimeout(removeObtrusiveFloaters, 800);
+        setTimeout(removeObtrusiveFloaters, 2500);
     })();
     </script>
 </body>
