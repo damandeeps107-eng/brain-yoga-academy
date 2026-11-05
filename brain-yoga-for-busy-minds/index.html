@@ -31,6 +31,11 @@
 
         
         /* Bulletproof Header & Logo Constraints across all devices */
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
         header {
             position: sticky !important;
             top: 0 !important;
@@ -41,10 +46,19 @@
             width: 100% !important;
             max-width: 100vw !important;
         }
+        .by-header-inner {
+            max-width: 1360px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
         .by-brand-logo {
             height: 35px !important;
             max-height: 35px !important;
             width: auto !important;
+            max-width: 200px !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
             max-width: 200px !important;
             object-fit: contain !important;
             display: block !important;
@@ -452,6 +466,11 @@
     <style>
         
         /* Bulletproof Header & Logo Constraints across all devices */
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
         header {
             position: sticky !important;
             top: 0 !important;
@@ -462,10 +481,19 @@
             width: 100% !important;
             max-width: 100vw !important;
         }
+        .by-header-inner {
+            max-width: 1360px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
         .by-brand-logo {
             height: 35px !important;
             max-height: 35px !important;
             width: auto !important;
+            max-width: 200px !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
             max-width: 200px !important;
             object-fit: contain !important;
             display: block !important;
@@ -870,7 +898,7 @@
     <!-- ========================================================================= -->
     <!-- TOP FLICKERING BAR: BRAIN YOGA FOR CHILDREN LINK                         -->
     <!-- ========================================================================= -->
-    <aside aria-label="Program Announcement" class="bg-[#007984] py-2.5 px-3 sm:px-4 text-center text-xs font-semibold text-white shadow-sm">
+    <aside aria-label="Program Announcement" class="bg-[#007984] py-2.5 px-3 sm:px-4 text-center text-xs font-semibold text-white shadow-sm" style="width: 100% !important; overflow: hidden !important; box-sizing: border-box !important;">
         <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap text-center leading-tight">
             <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brandOrange text-white whitespace-nowrap tracking-wide">
                 &#x1F9D2; Child Wellness
@@ -889,22 +917,22 @@
     <!-- TOP STICKY NAVBAR (Bulletproof Responsive: Desktop, Laptop, Tablet, Mobile)-->
     <!-- ========================================================================= -->
     <header class="sticky top-0 z-50 w-full bg-white/98 backdrop-blur-md border-b border-slate-200 shadow-xs transition-all">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between gap-2 sm:gap-4">
+        <div class="by-header-inner max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between gap-3 sm:gap-4">
             
             <!-- Official Brand Logo -->
             <a href="https://brainyogaacademy.com/brain-yoga-for-busy-minds/" class="flex items-center gap-2 sm:gap-2.5 flex-shrink-0 no-underline" style="display: flex !important; align-items: center !important; text-decoration: none !important;">
-                <img fetchpriority="high" decoding="async" src="https://brainyogaacademy.com/wp-content/uploads/2026/11/official_logo.png" alt="Brain Yoga Academy" class="by-brand-logo" style="width: auto !important; object-fit: contain !important; display: block !important;">
+                <img fetchpriority="high" decoding="async" src="https://brainyogaacademy.com/wp-content/uploads/2026/11/official_logo.png" alt="Brain Yoga Academy" class="by-brand-logo" style="height: 35px !important; max-height: 35px !important; width: auto !important; max-width: 200px !important; object-fit: contain !important; display: block !important;">
                 <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2 py-0.5 rounded-md border border-brandTeal/20 whitespace-nowrap">
                     For Busy Minds
                 </span>
             </a>
 
-            <!-- Desktop Navigation Links (Responsive xl:flex with clean spacing) -->
-            <nav class="hidden xl:flex items-center gap-2.5 2xl:gap-5 text-xs 2xl:text-sm font-semibold text-slate-700 whitespace-nowrap">
-                <a href="#challenges" class="hover:text-brandTeal transition-colors">Everyday Challenges</a>
-                <a href="#shift" class="hover:text-brandTeal transition-colors">Shift in Perspective</a>
+            <!-- Desktop Navigation Links (Clean, compact labels for perfect breathing room) -->
+            <nav class="hidden xl:flex items-center gap-3 2xl:gap-4 text-xs font-semibold text-slate-700 whitespace-nowrap">
+                <a href="#challenges" class="hover:text-brandTeal transition-colors">Challenges</a>
+                <a href="#shift" class="hover:text-brandTeal transition-colors">Perspective</a>
                 <a href="#about" class="hover:text-brandTeal transition-colors">About</a>
-                <a href="#practices" class="hover:text-brandTeal transition-colors">Our Practices</a>
+                <a href="#practices" class="hover:text-brandTeal transition-colors">Practices</a>
                 <a href="#benefits" class="hover:text-brandTeal transition-colors">Gains</a>
                 <a href="#corporate" class="hover:text-brandTeal transition-colors text-brandTeal font-bold">Corporate</a>
                 <a href="#trainer" class="hover:text-brandTeal transition-colors">Trainer</a>
@@ -913,16 +941,10 @@
             </nav>
 
             <!-- Header Action CTAs -->
-            <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
-                <a href="https://brainyogaacademy.com/" class="hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brandPeachLight hover:bg-brandPeachBg text-brandOrangeDark text-xs font-bold border border-brandOrange/20 transition-all">
-                    <span>Kids Yoga</span>
-                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                </a>
-
-                <button onclick="openModal('individualModal')" class="by-btn-primary !py-1.5 sm:!py-2 !px-2.5 sm:!px-4 !text-[11px] sm:!text-sm flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
+            <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+                <button onclick="openModal('individualModal')" class="by-btn-primary !py-2 !px-3.5 sm:!px-4 !text-xs sm:!text-sm flex items-center gap-1.5 whitespace-nowrap flex-shrink-0 shadow-sm">
                     <i data-lucide="calendar" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
-                    <span class="hidden sm:inline">Book FREE Session</span>
-                    <span class="sm:hidden">Book Free</span>
+                    <span>Book FREE Session</span>
                 </button>
 
                 <!-- Mobile & Tablet Hamburger Button (Visible on < 1280px) -->
