@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Cache Buster Meta Tags for Safari & Mobile Browsers -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <!-- Performance & Browser Cache Hints -->
+    <meta http-equiv="Cache-Control" content="public, max-age=604800, stale-while-revalidate=86400">
+    <link rel="preconnect" href="https://brainyogaacademy.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="prefetch" href="https://brainyogaacademy.com/">
 
     <title>Brain Yoga for Busy Minds | Mind-Wellness for Working Professionals & Corporate Teams</title>
     <meta name="description" content="Develop calmness, focus, and emotional balance through practical Brain Yoga techniques designed for everyday work and life. Founded by Rajendra Boddu (15 yrs IT veteran & Yoga Therapist).">
@@ -496,7 +500,7 @@
             
             <!-- Official Brand Logo -->
             <a href="https://brainyogaacademy.com/brain-yoga-for-busy-minds/" class="flex items-center gap-2 sm:gap-2.5 flex-shrink-0 no-underline" style="display: flex !important; align-items: center !important; text-decoration: none !important;">
-                <img decoding="async" src="https://brainyogaacademy.com/wp-content/uploads/2026/11/official_logo.png" alt="Brain Yoga Academy" class="by-brand-logo" style="width: auto !important; object-fit: contain !important; display: block !important;">
+                <img fetchpriority="high" decoding="async" src="https://brainyogaacademy.com/wp-content/uploads/2026/11/official_logo.png" alt="Brain Yoga Academy" class="by-brand-logo" style="width: auto !important; object-fit: contain !important; display: block !important;">
                 <span class="hidden sm:inline-block text-[10px] font-bold uppercase tracking-wider text-brandTeal bg-brandTealLight px-2 py-0.5 rounded-md border border-brandTeal/20 whitespace-nowrap">
                     For Busy Minds
                 </span>
@@ -1668,7 +1672,7 @@
                 <div class="reveal-on-scroll lg:col-span-5 flex flex-col items-center">
                     <div class="by-card w-full max-w-sm overflow-hidden bg-white border border-orange-200/80 shadow-md">
                         <div class="aspect-[4/4] bg-slate-100 overflow-hidden">
-                            <img src="trainer_rajendra_portrait.jpg" alt="Rajendra Boddu" class="w-full h-full object-cover object-top" loading="eager" decoding="async">
+                            <img loading="lazy" decoding="async" src="trainer_rajendra_portrait.jpg" alt="Rajendra Boddu" class="w-full h-full object-cover object-top" loading="eager" decoding="async">
                         </div>
                         <div class="p-6 bg-white text-center">
                             <h3 class="text-xl font-bold text-brandDark">Rajendra Boddu</h3>
@@ -2551,6 +2555,32 @@
             window.open(`https://wa.me/918331929240?text=${text}`, '_blank');
             closeModal('corporateModal');
         }
+    </script>
+
+    <!-- Instant Page Preloader for Lightning-Fast Navigation -->
+    <script>
+    (function() {
+        var preloaded = false;
+        function prefetchKids() {
+            if (preloaded) return;
+            preloaded = true;
+            var l = document.createElement('link');
+            l.rel = 'prefetch';
+            l.href = 'https://brainyogaacademy.com/';
+            document.head.appendChild(l);
+        }
+        // Prefetch when user hovers or touches children links
+        document.querySelectorAll('a[href="https://brainyogaacademy.com/"]').forEach(function(a) {
+            a.addEventListener('mouseenter', prefetchKids, {once: true, passive: true});
+            a.addEventListener('touchstart', prefetchKids, {once: true, passive: true});
+        });
+        // Idle prefetch after 1.5s
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(prefetchKids);
+        } else {
+            setTimeout(prefetchKids, 1500);
+        }
+    })();
     </script>
 </body>
 </html>
