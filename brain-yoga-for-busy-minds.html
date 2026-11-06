@@ -422,47 +422,72 @@
         }
 
         /* =========================================================
-           FLICKERING LINK ANIMATION — Gentle Glow Pulse
-           Sir's requirement: "clearly visible, attractive, gently
-           flickering to catch attention without being too distracting"
+           PROMINENT FLICKERING BUTTON ANIMATION
+           Sir's requirement: Bold, larger font, contrasting white
+           background, button appearance, relevant icon, smooth flickering glow
         ========================================================= */
-        @keyframes gentleFlicker {
-            0%,  100% {
-                opacity: 1;
-                box-shadow: 0 0 6px rgba(253, 135, 66, 0.4), 0 0 12px rgba(253, 135, 66, 0.2);
-                text-shadow: 0 0 8px rgba(255, 232, 218, 0.6);
+        @keyframes byFlickerPulse {
+            0%, 100% {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15), 0 0 0 0 rgba(253, 135, 66, 0.65);
+                transform: scale(1);
             }
             50% {
-                opacity: 0.72;
-                box-shadow: 0 0 16px rgba(253, 135, 66, 0.9), 0 0 32px rgba(253, 135, 66, 0.5), 0 0 48px rgba(253, 135, 66, 0.2);
-                text-shadow: 0 0 14px rgba(255, 255, 255, 0.9);
+                box-shadow: 0 4px 18px rgba(0,0,0,0.22), 0 0 0 4px rgba(253, 135, 66, 0.4), 0 0 18px rgba(253, 135, 66, 0.75);
+                transform: scale(1.03);
             }
         }
-        .by-flicker-link {
-            animation: gentleFlicker 2.6s ease-in-out infinite;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            border-radius: 20px;
-            padding: 2px 10px 2px 8px;
-            border: 1px solid rgba(253, 135, 66, 0.55);
-            background: rgba(253, 135, 66, 0.12);
-            font-weight: 700;
-            color: #FFE8DA;
-            text-decoration: none;
-            transition: color 0.2s ease;
-            white-space: nowrap;
+        .by-flicker-link,
+        .by-flicker-btn-prominent {
+            animation: byFlickerPulse 2.4s ease-in-out infinite !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 7px !important;
+            border-radius: 9999px !important;
+            padding: 6px 18px !important;
+            border: 2px solid #FD8742 !important;
+            background: #FFFFFF !important;
+            font-weight: 800 !important;
+            font-size: 13.5px !important;
+            color: #C2410C !important;
+            text-decoration: none !important;
+            white-space: nowrap !important;
+            letter-spacing: 0.01em !important;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
         }
-        .by-flicker-link:hover {
-            color: #ffffff;
-            animation-play-state: paused;
-            box-shadow: 0 0 20px rgba(253, 135, 66, 1);
+        .by-flicker-link:hover,
+        .by-flicker-btn-prominent:hover {
+            color: #ffffff !important;
+            background: #FD8742 !important;
+            border-color: #FFFFFF !important;
+            animation-play-state: paused !important;
+            transform: scale(1.05) !important;
+            box-shadow: 0 6px 20px rgba(253, 135, 66, 0.6) !important;
+        }
+        .by-flicker-link svg,
+        .by-flicker-btn-prominent svg {
+            flex-shrink: 0 !important;
+            transition: transform 0.2s ease !important;
+        }
+        .by-flicker-link:hover svg,
+        .by-flicker-btn-prominent:hover svg {
+            transform: translateX(3px) !important;
+        }
+        @media (max-width: 640px) {
+            .by-flicker-link,
+            .by-flicker-btn-prominent {
+                padding: 4px 10px !important;
+                font-size: 11.5px !important;
+                gap: 5px !important;
+            }
         }
 
         /* Bottom flicker bar */
         .by-bottom-flicker-bar {
             background: linear-gradient(135deg, #085C65 0%, #007984 60%, #0a8f9b 100%);
-            padding: 14px 16px;
+            padding: 16px 16px;
             text-align: center;
         }
 
@@ -867,47 +892,72 @@
         }
 
         /* =========================================================
-           FLICKERING LINK ANIMATION — Gentle Glow Pulse
-           Sir's requirement: "clearly visible, attractive, gently
-           flickering to catch attention without being too distracting"
+           PROMINENT FLICKERING BUTTON ANIMATION
+           Sir's requirement: Bold, larger font, contrasting white
+           background, button appearance, relevant icon, smooth flickering glow
         ========================================================= */
-        @keyframes gentleFlicker {
-            0%,  100% {
-                opacity: 1;
-                box-shadow: 0 0 6px rgba(253, 135, 66, 0.4), 0 0 12px rgba(253, 135, 66, 0.2);
-                text-shadow: 0 0 8px rgba(255, 232, 218, 0.6);
+        @keyframes byFlickerPulse {
+            0%, 100% {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15), 0 0 0 0 rgba(253, 135, 66, 0.65);
+                transform: scale(1);
             }
             50% {
-                opacity: 0.72;
-                box-shadow: 0 0 16px rgba(253, 135, 66, 0.9), 0 0 32px rgba(253, 135, 66, 0.5), 0 0 48px rgba(253, 135, 66, 0.2);
-                text-shadow: 0 0 14px rgba(255, 255, 255, 0.9);
+                box-shadow: 0 4px 18px rgba(0,0,0,0.22), 0 0 0 4px rgba(253, 135, 66, 0.4), 0 0 18px rgba(253, 135, 66, 0.75);
+                transform: scale(1.03);
             }
         }
-        .by-flicker-link {
-            animation: gentleFlicker 2.6s ease-in-out infinite;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            border-radius: 20px;
-            padding: 2px 10px 2px 8px;
-            border: 1px solid rgba(253, 135, 66, 0.55);
-            background: rgba(253, 135, 66, 0.12);
-            font-weight: 700;
-            color: #FFE8DA;
-            text-decoration: none;
-            transition: color 0.2s ease;
-            white-space: nowrap;
+        .by-flicker-link,
+        .by-flicker-btn-prominent {
+            animation: byFlickerPulse 2.4s ease-in-out infinite !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 7px !important;
+            border-radius: 9999px !important;
+            padding: 6px 18px !important;
+            border: 2px solid #FD8742 !important;
+            background: #FFFFFF !important;
+            font-weight: 800 !important;
+            font-size: 13.5px !important;
+            color: #C2410C !important;
+            text-decoration: none !important;
+            white-space: nowrap !important;
+            letter-spacing: 0.01em !important;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
         }
-        .by-flicker-link:hover {
-            color: #ffffff;
-            animation-play-state: paused;
-            box-shadow: 0 0 20px rgba(253, 135, 66, 1);
+        .by-flicker-link:hover,
+        .by-flicker-btn-prominent:hover {
+            color: #ffffff !important;
+            background: #FD8742 !important;
+            border-color: #FFFFFF !important;
+            animation-play-state: paused !important;
+            transform: scale(1.05) !important;
+            box-shadow: 0 6px 20px rgba(253, 135, 66, 0.6) !important;
+        }
+        .by-flicker-link svg,
+        .by-flicker-btn-prominent svg {
+            flex-shrink: 0 !important;
+            transition: transform 0.2s ease !important;
+        }
+        .by-flicker-link:hover svg,
+        .by-flicker-btn-prominent:hover svg {
+            transform: translateX(3px) !important;
+        }
+        @media (max-width: 640px) {
+            .by-flicker-link,
+            .by-flicker-btn-prominent {
+                padding: 4px 10px !important;
+                font-size: 11.5px !important;
+                gap: 5px !important;
+            }
         }
 
         /* Bottom flicker bar */
         .by-bottom-flicker-bar {
             background: linear-gradient(135deg, #085C65 0%, #007984 60%, #0a8f9b 100%);
-            padding: 14px 16px;
+            padding: 16px 16px;
             text-align: center;
         }
 
@@ -918,17 +968,19 @@
     <!-- ========================================================================= -->
     <!-- TOP FLICKERING BAR: BRAIN YOGA FOR CHILDREN LINK                         -->
     <!-- ========================================================================= -->
-    <aside aria-label="Program Announcement" class="bg-[#007984] py-2.5 px-3 sm:px-4 text-center text-xs font-semibold text-white shadow-sm" style="width: 100% !important; overflow: hidden !important; box-sizing: border-box !important;">
-        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap text-center leading-tight">
-            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-brandOrange text-white whitespace-nowrap tracking-wide">
-                &#x1F9D2; Child Wellness
+    <aside aria-label="Program Announcement" class="bg-[#007984] py-1.5 sm:py-2 px-2 sm:px-4 text-center text-xs font-semibold text-white shadow-sm" style="width: 100% !important; overflow: hidden !important; box-sizing: border-box !important;">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-3 flex-wrap text-center leading-tight">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold uppercase bg-brandOrange text-white whitespace-nowrap tracking-wide">
+                <span class="sm:hidden">Kids</span>
+                <span class="hidden sm:inline">Child Wellness</span>
             </span>
-            <span class="text-[11px] sm:text-xs opacity-90">Looking for memory &amp; focus training for kids?</span>
+            <span class="hidden sm:inline text-[12px] sm:text-xs opacity-95">Looking for memory &amp; focus training for kids?</span>
             <a href="https://brainyogaacademy.com/"
-               class="by-flicker-link text-[11px] sm:text-xs"
+               class="by-flicker-btn-prominent"
                target="_self" rel="noopener">
-                <span>&#x2728; Brain Yoga for Children</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <span style="font-size:14px;">🧒</span>
+                <span>Brain Yoga for Children</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
         </div>
     </aside>
@@ -2693,18 +2745,18 @@
     <!-- BOTTOM FLICKERING BAR: BRAIN YOGA FOR CHILDREN LINK                      -->
     <!-- ========================================================================= -->
     <div class="by-bottom-flicker-bar" aria-label="Children Program Link Bottom">
-        <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;">
-            <span style="font-family:Inter,sans-serif;font-size:12px;font-weight:600;color:rgba(255,255,255,0.88);letter-spacing:0.01em;">
-                &#x1F4A1; Also explore our Children's program &mdash;
+        <div style="max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
+            <span style="font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.95);letter-spacing:0.01em;">
+                💡 Also explore our Children's program &mdash;
             </span>
             <a href="https://brainyogaacademy.com/"
-               class="by-flicker-link"
-               target="_self" rel="noopener"
-               style="font-size:13px;">
-                <span>&#x2728; Brain Yoga for Children</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+               class="by-flicker-btn-prominent"
+               target="_self" rel="noopener">
+                <span style="font-size:15px;">🧒</span>
+                <span>Brain Yoga for Children</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <span style="font-family:Inter,sans-serif;font-size:11px;color:rgba(255,255,255,0.6);">Memory &middot; Focus &middot; Concentration for Kids</span>
+            <span class="hidden sm:inline" style="font-family:'Poppins',sans-serif;font-size:12px;color:rgba(255,255,255,0.75);">Memory &middot; Focus &middot; Concentration for Kids</span>
         </div>
     </div>
 
